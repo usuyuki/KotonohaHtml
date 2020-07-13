@@ -15,6 +15,9 @@ class CreateSheetsTable extends Migration
     {
         Schema::create('sheets', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('explain');
+            $table->string('design');
             $table->timestamps();
         });
     }

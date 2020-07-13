@@ -15,6 +15,9 @@ class CreateFoldsTable extends Migration
     {
         Schema::create('folds', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('explain');
+            $table->string('animation');
             $table->timestamps();
         });
     }

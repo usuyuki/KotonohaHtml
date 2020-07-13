@@ -15,6 +15,9 @@ class CreateScentsTable extends Migration
     {
         Schema::create('scents', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('explain');
+            $table->string('picture');
             $table->timestamps();
         });
     }
