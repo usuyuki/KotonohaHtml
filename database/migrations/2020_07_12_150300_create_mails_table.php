@@ -20,6 +20,7 @@ class CreateMailsTable extends Migration
             $table->text('text');//text型は65535字まで
             $table->unsignedBigInteger('fold_id');
             $table->unsignedBigInteger('scent_id');
+            $table->unsignedBigInteger('flower_id');
             $table->unsignedBigInteger('sheet_id');
             $table->string('url');
             $table->uuid('token');
