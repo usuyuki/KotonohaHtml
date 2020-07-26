@@ -15,15 +15,17 @@ class ScentsTableSeeder extends Seeder
         //http://www.baikundo.co.jp/wordpress/6kinds_of_incenses/
         //六種の薫物→六種の薫物は、「梅花（ばいか）」・「荷葉（かよう）」・「侍従（じじゅう）」・「菊花（きっか）」・「落葉（らくよう）」・「黒方（くろぼう）」の六種類の香りです。鎌倉時代末期に記されたとされる香道の起源・香趣を説いた伝書である「後伏見院宸翰薫物方（ごふしみいんしんかんたきものほう）」などでは、それらを春夏秋冬になぞらえています。
         $param=[
-            'name'=>'無し',
-            'explain'=>'香り無し',
+            'name'=>'無',
+            'explain_nowja'=>'香り無し',
+            'explain_oldja'=>'香り無し',
             'picture'=>'',
             
 
         ];
         $param=[
             'name'=>'梅花',
-            'explain'=>'梅の花のような香り',
+            'explain_nowja'=>'梅の花のような香り',
+            'explain_oldja'=>'うめの花の香に似たり',
             'picture'=>'',
             
 
@@ -31,7 +33,8 @@ class ScentsTableSeeder extends Seeder
         DB::table('scents')->insert($param);
         $param=[
             'name'=>'荷葉',
-            'explain'=>'蓮の花を思わせる香り',
+            'explain_nowja'=>'蓮の花を思わせる香り',
+            'explain_oldja'=>'はすの花の香にかよへり',
             'picture'=>'',
             
 
@@ -39,7 +42,8 @@ class ScentsTableSeeder extends Seeder
         DB::table('scents')->insert($param);
         $param=[
             'name'=>'侍従',
-            'explain'=>'ものの憐れさを思わせる香り',
+            'explain_nowja'=>'ものの憐れさを思わせる香り',
+            'explain_oldja'=>'秋風蕭颯たる夕、心にくきおりふしものあはれんて、むかし覚ゆる匂によそへたり',
             'picture'=>'',
             
 
@@ -47,7 +51,8 @@ class ScentsTableSeeder extends Seeder
         DB::table('scents')->insert($param);
         $param=[
             'name'=>'菊花',
-            'explain'=>'菊の花のような香り',
+            'explain_nowja'=>'菊の花のような香り',
+            'explain_oldja'=>'きくのはなむらうつろふ色。露にかほり水にうつす香にことならず',
             'picture'=>'',
             
 
@@ -55,7 +60,8 @@ class ScentsTableSeeder extends Seeder
         DB::table('scents')->insert($param);
         $param=[
             'name'=>'落葉',
-            'explain'=>'葉の散る哀れさを思わせる香り',
+            'explain_nowja'=>'葉の散る哀れさを思わせる香り',
+            'explain_oldja'=>'もみぢ散頃ほに出てまねくなる。すすきのよそほひも覚ゆるなり',
             'picture'=>'',
             
 
@@ -63,7 +69,8 @@ class ScentsTableSeeder extends Seeder
         DB::table('scents')->insert($param);
         $param=[
             'name'=>'黒方',
-            'explain'=>'深く懐かしい、落ち着いた香り',
+            'explain_nowja'=>'深く懐かしい、落ち着いた香り',
+            'explain_oldja'=>'ふかくさえたるに、あさからぬ気をふくめるにより、四季にわたりて、身にしむ色のなづかしき匂いかねたり',
             'picture'=>'',
             
 

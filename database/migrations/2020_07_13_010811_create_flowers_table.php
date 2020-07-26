@@ -16,7 +16,8 @@ class CreateFlowersTable extends Migration
         Schema::create('flowers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('explain');
+            $table->string('explain_nowja');
+            $table->string('explain_oldja');
             $table->string('picture');
             $table->timestamps();
         });

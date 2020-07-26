@@ -13,7 +13,8 @@ class SheetsTableSeeder extends Seeder
     {
         $param=[
             'name'=>'和紙(楮)',
-            'explain'=>'楮(こうぞ)を原料とした和紙です。',
+            'explain_nowja'=>'楮(こうぞ)を原料とした和紙です。',
+            'explain_oldja'=>'楮を原料とせし和紙なり。',
             'design'=>'',
             
 
@@ -22,7 +23,8 @@ class SheetsTableSeeder extends Seeder
 
         $param=[
             'name'=>'和紙(三椏)',
-            'explain'=>'三椏(みつまた)を原料とした和紙です。',
+            'explain_nowja'=>'三椏(みつまた)を原料とした和紙です。',
+            'explain_oldja'=>'三椏を原料とせし和紙なり。',
             'design'=>'',
             
 
@@ -31,7 +33,8 @@ class SheetsTableSeeder extends Seeder
 
         $param=[
             'name'=>'和紙(雁皮)',
-            'explain'=>'雁皮(がんぴ)を原料とした和紙です。',
+            'explain_nowja'=>'雁皮(がんぴ)を原料とした和紙です。',
+            'explain_oldja'=>'雁皮を原料とせし和紙なり。',
             'design'=>'',
             
 
@@ -40,7 +43,8 @@ class SheetsTableSeeder extends Seeder
 
         $param=[
             'name'=>'木簡',
-            'explain'=>'荷札としてだけでなく、和歌を書いた歌木簡としても使われました。',
+            'explain_nowja'=>'荷札としてだけでなく、和歌を書いた歌木簡としても使われました。',
+            'explain_oldja'=>'荷札ばかりならず、和歌を書くことにも使はれし。',
             'design'=>'',
             
 

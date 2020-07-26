@@ -13,7 +13,8 @@ class FlowersTableSeeder extends Seeder
     {
         $param=[
             'name'=>'菊',
-            'explain'=>'「菊の色は移りにけりな……」と移り変わるものとして使われていました。',
+            'explain_nowja'=>'「菊の色は移りにけりな……」と移り変わるものとして使われていました。',
+            'explain_oldja'=>'移り変わりしものとして使われたり。',
             'picture'=>'',
             
 
