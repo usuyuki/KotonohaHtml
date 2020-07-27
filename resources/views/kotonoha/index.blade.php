@@ -1,17 +1,15 @@
-<html>
-<head>
-    <title>kotonoha/Index</title>
-    <style>
-    body {font-size:16pt; color:#999;}
-    h1 {font-size:100pt; text-align:right; color:#f6f6f6; margin:-50px 0px -100px 0px; letter-spacing:-4pt;}
+@extends('layouts.kotonohaapp')
+@section('title','Index')
+@section('menubar')
+    @parent
+    言の葉HTML
+@endsection
 
-    
-    </style>
-</head>
-<body>
-    <h1>Index</h1>
-    <p>これは紹介ページです。</p>
-    <p>{{$msg}}</p>
-</body>
+@section('content')
+    <p>言の葉HTMLへようこそ</p>
+    <p>言の葉HTMLでは縦書きの手紙に様々な付加価値を添えて送ることができます。</p>
+@endsection
 
-</html>
+@section('footer')
+    @parent 
+@endsection
