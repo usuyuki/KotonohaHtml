@@ -26,9 +26,7 @@ body {
     <h1>@yield('title')</h1>
     @section('menubar')
     <h2 class="menutitle">※メニュー</h2>
-    <ul>
-        <li>@show</li>
-    </ul>
+    @show
     <hr size="1">
     <div class="content">
     @yield('content')

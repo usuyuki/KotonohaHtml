@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/','MainController@index');
 Route::post('post','MainController@post');
-Route::get('show','MainController@show');
+Route::get('show/{id}','MainController@show');
 
 // Route::get('/', function () 
 //     return view('welcome');
