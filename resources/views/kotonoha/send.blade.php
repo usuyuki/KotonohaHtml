@@ -10,13 +10,17 @@
 </head>
 <body>
     <h1>Post</h1>
-    <p>これは送信ページです。</p>
+    <p>ここは手紙を送るページです。</p>
     <p>{{$msg ?? ''}}</p>
-    <form method="POST" action="/post">
+    <form method="POST" action="/send">
     @csrf
     <input type="text" name="msg">
     <input type="submit">
-    
+    <div class="selection-group">
+        <input id="a" type="radio" name="rate" value="a">
+        <input id="b" type="radio" name="rate" value="b">
+        <input id="c" type="radio" name="rate" value="c">
+</div>
     </form>
 </body>
 
