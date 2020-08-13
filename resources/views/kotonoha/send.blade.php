@@ -11,7 +11,7 @@
 <body>
     <h1>Post</h1>
     <p>これは送信ページです。</p>
-    <p>{{$msg}}</p>
+    <p>{{$msg ?? ''}}</p>
     <form method="POST" action="/post">
     @csrf
     <input type="text" name="msg">
