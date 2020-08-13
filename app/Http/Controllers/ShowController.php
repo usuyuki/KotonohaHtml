@@ -7,16 +7,23 @@ use Illuminate\Http\Request;
 class ShowController extends Controller
 {
     public function show(){
-        $id =$request->id;
-        $user = Mail::where('id', '=', $id)->first();
-        $for=$user->for;
-        $text=$user->text;
-        $fold=$user->fold;
-        $scent=$user->scent;
-        $flower=$user->flower;
-        $sheet=$user->sheet;
+        $uuid =$request->id;
+        $user = Mail::where('uuid', '=', $uuid)->first();
+        $fold = Fold::where('id','=',$user->fold_id)->first();
+        $scent =Scent::where('id','=',$user->scent)->first();
+        $flower =Flower::where('id','=',$user->flower)->first();
+        $sheet =Sheet::where('id','=',$user->sheet)->first();
 
-        return view('kotonoha.show',$for,$from,$text,$fold,$scent,$flower,$sheet);
+        $data=[
+            'for'=>$user->for,
+            'text'=>$user->text,
+            'fold'=>$fold,
+            'scent'=>$scent,
+            'flower'=>$flower,
+            'sheet'=>$sheet
+        ];
+
+        return view('kotonoha.show',$data);
     }
 
 }

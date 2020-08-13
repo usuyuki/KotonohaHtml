@@ -15,6 +15,7 @@ class CreateMailsTable extends Migration
     {
         Schema::create('mails', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->string('for');
             $table->string('from');
             $table->text('text');//text型は65535字まで
@@ -22,8 +23,6 @@ class CreateMailsTable extends Migration
             $table->unsignedBigInteger('scent_id');
             $table->unsignedBigInteger('flower_id');
             $table->unsignedBigInteger('sheet_id');
-            $table->string('url');
-            $table->uuid('token');
             $table->timestamps();
         });
     }
