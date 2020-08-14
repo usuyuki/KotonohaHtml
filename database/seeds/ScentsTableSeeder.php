@@ -18,7 +18,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'無',
             'explain_nowja'=>'香り無し',
             'explain_oldja'=>'香り無し',
-            'picture'=>'',
+            'picture'=>'/img/scents/mu.png',
             
 
         ];
@@ -26,7 +26,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'梅花',
             'explain_nowja'=>'梅の花のような香り',
             'explain_oldja'=>'うめの花の香に似たり',
-            'picture'=>'',
+            'picture'=>'/img/scents/ume.png',
             
 
         ];
@@ -35,7 +35,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'荷葉',
             'explain_nowja'=>'蓮の花を思わせる香り',
             'explain_oldja'=>'はすの花の香にかよへり',
-            'picture'=>'',
+            'picture'=>'/img/scents/hasu.png',
             
 
         ];
@@ -44,7 +44,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'侍従',
             'explain_nowja'=>'ものの憐れさを思わせる香り',
             'explain_oldja'=>'秋風蕭颯たる夕、心にくきおりふしものあはれんて、むかし覚ゆる匂によそへたり',
-            'picture'=>'',
+            'picture'=>'/img/scents/zizyou.png',
             
 
         ];
@@ -53,7 +53,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'菊花',
             'explain_nowja'=>'菊の花のような香り',
             'explain_oldja'=>'きくのはなむらうつろふ色。露にかほり水にうつす香にことならず',
-            'picture'=>'',
+            'picture'=>'/img/scents/kiku.png',
             
 
         ];
@@ -62,7 +62,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'落葉',
             'explain_nowja'=>'葉の散る哀れさを思わせる香り',
             'explain_oldja'=>'もみぢ散頃ほに出てまねくなる。すすきのよそほひも覚ゆるなり',
-            'picture'=>'',
+            'picture'=>'/img/scents/otiba.png',
             
 
         ];
@@ -71,7 +71,7 @@ class ScentsTableSeeder extends Seeder
             'name'=>'黒方',
             'explain_nowja'=>'深く懐かしい、落ち着いた香り',
             'explain_oldja'=>'ふかくさえたるに、あさからぬ気をふくめるにより、四季にわたりて、身にしむ色のなづかしき匂いかねたり',
-            'picture'=>'',
+            'picture'=>'/img/scents/kurobou.png',
             
 
         ];

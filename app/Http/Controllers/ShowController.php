@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Flower;
+use App\Fold;
+use App\Mail;
+use App\Scent;
+use App\Sheet;
 
 class ShowController extends Controller
 {
@@ -17,10 +22,10 @@ class ShowController extends Controller
         $data=[
             'for'=>$user->for,
             'text'=>$user->text,
-            'fold'=>$fold,
-            'scent'=>$scent,
-            'flower'=>$flower,
-            'sheet'=>$sheet
+            'folds'=>$fold,
+            'scents'=>$scent,
+            'flowers'=>$flower,
+            'sheets'=>$sheet
         ];
 
         return view('kotonoha.show',$data);

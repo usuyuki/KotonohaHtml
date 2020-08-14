@@ -33,6 +33,7 @@ body {
     </div>
     <div class="footer">
     @yield('footer')
+    <h3>このサービスは暗号化してません。流出すると困る情報は送らないでください。</h3>
     <h3>copyright 2020 usuyuki.</h3>
     </div>
 </body>
