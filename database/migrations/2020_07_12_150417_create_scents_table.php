@@ -18,7 +18,7 @@ class CreateScentsTable extends Migration
             $table->string('name');
             $table->string('explain_nowja');
             $table->string('explain_oldja');
-            $table->string('picture');
+            $table->string('logo');
             $table->timestamps();
         });
     }

@@ -12,12 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//ホームページ
 Route::get('/','IndexController@index');
+
+//送信
 Route::get('post','SendController@show');
-Route::post('post','SendController@post');
-// Route::post('post','MainController@post');
+Route::post('post/confirm','SendController@post');
+Route::post('post/done','SendController@post');
+
+//表示ページ
 Route::get('show/{id}','ShowController@show');
 
-// Route::get('/', function () 
-//     return view('welcome');
-// });
+

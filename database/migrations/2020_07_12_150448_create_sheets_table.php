@@ -18,6 +18,7 @@ class CreateSheetsTable extends Migration
             $table->string('name');
             $table->string('explain_nowja');
             $table->string('explain_oldja');
+            $table->string('logo');
             $table->string('design');
             $table->timestamps();
         });

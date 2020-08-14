@@ -29,11 +29,16 @@ class SendController extends Controller
         return view('kotonoha.send',$data);
     }
 
+    public function confirm(Request $request){
+        
+        return view('kotonoha.send',$data);
+    }
+
     public function post(Request $request){
         $uuid=Str::uuid();
         $data=[
             'uuid'=>$uuid,
-        ]
+        ];
         //データ格納
         //URL渡す
         return view('kotonoha.send',$data);
