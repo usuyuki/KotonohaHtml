@@ -1,4 +1,5 @@
-<html>
+@extends('layouts.kotonohaapp')
+@section('title','言の葉HTML')
 <head>
     <title>手紙を送る</title>
     <style>
@@ -30,7 +31,7 @@
     .selection-group input[type="radio"]:checked + label img {
     background: #669999;
     }
-    /* 画像部分に余白を持たせる */
+    /* 画像部分に余白を持たせる、枠囲みする */
     label img {
     margin: 3px;
     padding: 8px;
@@ -55,11 +56,11 @@
 
     </style>
 </head>
-@section('menubar')
-        @parent
-        言の葉HTML
-    @endsection
 <body>
+@section('menubar')
+    @parent
+@endsection
+@section('content')
 
     <h1>Post</h1>
     <p>ここは手紙を送るページです。</p>
@@ -89,7 +90,8 @@
                 @endforeach
             </div>
         </div>
-
+    </div>
+    <div class="selection-group">
         <div class="flower">
         <p class='title'> 2.沿え花をお選びください。</p>
             <div class="sentakusi">
@@ -146,11 +148,9 @@
     </div>
     <input type="submit">
     </form>
-
+    @endsection
 
     @section('footer')
     @parent 
     @endsection
 </body>
-
-</html>

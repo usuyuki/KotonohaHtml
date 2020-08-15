@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 //ホームページ
 Route::get('/','IndexController@index');
-
+Route::get('contact','IndexController@contact');
 //送信
-Route::get('post','SendController@show');
-Route::post('post/confirm','SendController@post');
-Route::post('post/done','SendController@post');
+Route::get('send','SendController@show');
+Route::post('send/confirm','SendController@post');
+Route::post('send/done','SendController@post');
 
 //表示ページ
 Route::get('show/{id}','ShowController@show');
