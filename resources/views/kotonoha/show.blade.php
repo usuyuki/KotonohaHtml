@@ -1,8 +1,7 @@
 @extends('layouts.kotonohaapp')
-@section('title','Index')
+@section('title','御手紙')
 @section('menubar')
     @parent
-    言の葉HTML
 @endsection
 
 <style>
@@ -14,7 +13,7 @@
         background: #FFF;
         border: solid 3px green;/*線*/
         border-radius: 10px;/*角の丸み*/
-        float: left;
+        /* float: left; */
 }
 </style>
 @section('content')
@@ -27,27 +26,27 @@
     </div>
     <div class="waku">
     <h2>香り</h2>
-    <p>{{$scent->logo}}</p>
+    <img src="{{$scent->logo}}" width=60px height=60px>
     <p>{{$scent->name}}</p>
-    <p>{{$scent->intro}}</p>
+    <p>{{$scent->explain_nowja}}</p>
     </div>
     <div class="waku">
     <h2>添え花</h2>
-    <p>{{$flower->logo}}</p>
+    <img src="{{$flower->logo}}" width=60px height=60px>
     <p>{{$flower->name}}</p>
-    <p>{{$flower->intro}}</p>
+    <p>{{$flower->explain_nowja}}</p>
     </div>
     <div class="waku">
     <h2>用紙</h2>
-    <p>{{$sheet->logo}}</p>
+    <img src="{{$sheet->logo}}" width=60px height=60px>
     <p>{{$sheet->name}}</p>
-    <p>{{$sheet->intro}}</p>
+    <p>{{$sheet->explain_nowja}}</p>
     </div>
     <div class="waku">
     <h2>折り方</h2>
-    <p>{{$fold->logo}}</p>
+    <img src="{{$fold->logo}}" width=60px height=60px>
     <p>{{$fold->name}}</p>
-    <p>{{$fold->intro}}</p>
+    <p>{{$fold->explain_nowja}}</p>
     </div>
 
 

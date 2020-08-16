@@ -34,14 +34,25 @@ class SendController extends Controller
         return view('kotonoha.confirm',$data);
     }
 
+ 
+
     public function post(Request $request){
-        $uuid=Str::uuid();
-        $data=[
-            'uuid'=>$uuid,
-        ];
-        //データ格納
+
         //URL渡す
-        return view('kotonoha.send',$data);
+        $uuid=Str::uuid();
+        $url = "http://127.0.0.1:8000/show/".$uuid;
+
+        //データ格納
+        $user_location = Mail::create($request->all() +array('uuid'=>$uuid));
+       
+
+        
+
+        $data=[
+            'url'=>$url,
+        ];
+
+        return view('kotonoha.done',$data);
 
     }
 

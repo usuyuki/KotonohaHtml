@@ -73,14 +73,14 @@
 
     <h1>Post</h1>
     <p>ここは手紙を送るページです。</p>
-    <form method="POST" action="/send">
+    <form method="POST" action="/send/done">
     @csrf
     <p>宛名</p>
     <input type="text" name="for">
     <p>送り主</p>
     <input type="text" name="from">
     <p>本文</p>
-    <textarea name="comment" cols="60" rows="10" name="text"></textarea>
+    <textarea cols="60" rows="10" name="text"></textarea>
 
     <!-- 付加価値コーナー -->
     <div class="selection-group">
@@ -89,7 +89,7 @@
             <div class="sentakusi">
                 @foreach($scents as $scent)
                 <div class="youso">
-                    <input id="{{$scent->id}}" type="radio" name="scent" value="{{$scent->id}}" required>
+                    <input id="{{$scent->id}}" type="radio" name="scent_id" value="{{$scent->id}}" required>
                     <label for="{{$scent->id}}">
                         <p class="name">{{$scent->name}}</p>
                         <img src="{{$scent->logo}}" width=60px height=60px>
@@ -107,7 +107,7 @@
             <div class="sentakusi">
                 @foreach($flowers as $flower)
                 <div class="youso">
-                    <input id="{{$flower->id.+1}}" type="radio" name="flower" value="{{$flower->id}}" required>
+                    <input id="{{$flower->id.+1}}" type="radio" name="flower_id" value="{{$flower->id}}" required>
                     <label for="{{$flower->id.+1}}">
                         <p class='name'>{{$flower->name}}</p>
                         <img src="{{$flower->logo}}" width=60px height=60px>
@@ -125,7 +125,7 @@
             <div class="sentakusi">
                 @foreach($sheets as $sheet)
                 <div class="youso">
-                    <input id="{{$sheet->id.+2}}" type="radio" name="sheet" value="{{$sheet->id}}" required>
+                    <input id="{{$sheet->id.+2}}" type="radio" name="sheet_id" value="{{$sheet->id}}" required>
                     <label for="{{$sheet->id.+2}}">
                         <p class='name'>{{$sheet->name}}</p>
                         <img src="{{$sheet->logo}}" width=60px height=60px>
@@ -144,7 +144,7 @@
             <div class="sentakusi">
                 @foreach($folds as $fold)
                 <div class="youso">
-                    <input id="{{$fold->id.+3}}" type="radio" name="fold" value="{{$fold->id}}" required>
+                    <input id="{{$fold->id.+3}}" type="radio" name="fold_id" value="{{$fold->id}}" required>
                     <label for="{{$fold->id.+3}}">
                         <p class='name'>{{$fold->name}}</p>
                         <img src="{{$fold->logo}}" width=60px height=60px>
@@ -161,7 +161,7 @@
 
 
     </div>
-    <input type="submit" name="送信内容確認">
+    <input type="submit" name="文使いに渡たす">
     </form>
 @endsection
 

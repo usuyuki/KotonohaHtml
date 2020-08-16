@@ -17,7 +17,7 @@ Route::get('/','IndexController@index');
 Route::get('contact','IndexController@contact');
 //送信
 Route::get('send','SendController@show');
-Route::post('send/confirm','SendController@post');
+// Route::post('send/confirm','SendController@confirm');
 Route::post('send/done','SendController@post');
 
 //表示ページ

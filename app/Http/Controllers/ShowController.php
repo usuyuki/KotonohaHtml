@@ -15,18 +15,21 @@ class ShowController extends Controller
         $uuid =$request->id;
         $user = Mail::where('uuid', '=', $uuid)->first();
         $fold = Fold::where('id','=',$user->fold_id)->first();
-        $scent =Scent::where('id','=',$user->scent)->first();
-        $flower =Flower::where('id','=',$user->flower)->first();
-        $sheet =Sheet::where('id','=',$user->sheet)->first();
+        $scent =Scent::where('id','=',$user->scent_id)->first();
+        $flower =Flower::where('id','=',$user->flower_id)->first();
+        $sheet =Sheet::where('id','=',$user->sheet_id)->first();
+
 
         $data=[
             'for'=>$user->for,
+            'from'=>$user->from,
             'text'=>$user->text,
-            'folds'=>$fold,
-            'scents'=>$scent,
-            'flowers'=>$flower,
-            'sheets'=>$sheet
+            'fold'=>$fold,
+            'scent'=>$scent,
+            'flower'=>$flower,
+            'sheet'=>$sheet
         ];
+        \Log::debug($data);
 
         return view('kotonoha.show',$data);
     }
