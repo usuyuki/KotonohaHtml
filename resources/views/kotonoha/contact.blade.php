@@ -17,7 +17,7 @@ a.btn--orange:hover {
 @endsection
 
 @section('content')
-    <h1>お問い合わせ</h1>
+    <h2>お問い合わせ</h2>
 
     <p>ご意見、ご感想、バグなどあれば下記フォームよりご連絡ください。</p>
     <p>Googleフォームを利用させていただいております。</p>

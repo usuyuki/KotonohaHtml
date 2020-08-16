@@ -12,13 +12,13 @@
     h1 {font-size:100pt; text-align:right; color:#f6f6f6; margin:-50px 0px -100px 0px; letter-spacing:-4pt; font-family: はんなり明朝;}
 
     /* 説明の文字サイズを小さくする */
-    .selection-group p.intro{
+    p.intro{
         font-size:12pt;
     }
-    .selection-group p.title{
+    p.title{
         font-size:18pt; color:#Black;
     }
-    .selection-group p.name{
+    p.name{
         font-size:18pt; color:#Black; font-weight: bold;
     }
 
@@ -31,6 +31,14 @@
     .selection-group input[type="radio"]:checked + label img {
     background: #669999;
     }
+    .selection-group input[type="radio"] {
+    display: none;
+    }
+    /* 選択されたラジオボタンの画像の背景をうぐいす色に変える */
+    .selection-group input[type="radio"]:checked + label img {
+    background: #669999;
+    }
+    
     /* 画像部分に余白を持たせる、枠囲みする */
     label img {
     margin: 3px;
@@ -52,6 +60,7 @@
         border-radius: 10px;/*角の丸み*/
         float: left;
     }
+    
 
 
     </style>
@@ -71,7 +80,7 @@
     <p>送り主</p>
     <input type="text" name="from">
     <p>本文</p>
-    <textarea name="comment" cols="60" rows="10" name="text"></textarea></p>
+    <textarea name="comment" cols="60" rows="10" name="text"></textarea>
 
     <!-- 付加価値コーナー -->
     <div class="selection-group">
@@ -80,7 +89,7 @@
             <div class="sentakusi">
                 @foreach($scents as $scent)
                 <div class="youso">
-                    <input id="{{$scent->id}}" type="radio" name="scent" value="{{$scent->id}}">
+                    <input id="{{$scent->id}}" type="radio" name="scent" value="{{$scent->id}}" required>
                     <label for="{{$scent->id}}">
                         <p class="name">{{$scent->name}}</p>
                         <img src="{{$scent->logo}}" width=60px height=60px>
@@ -91,14 +100,15 @@
             </div>
         </div>
     </div>
+    
     <div class="selection-group">
         <div class="flower">
-        <p class='title'> 2.沿え花をお選びください。</p>
+        <p class='title'> 2.添え花をお選びください。</p>
             <div class="sentakusi">
                 @foreach($flowers as $flower)
                 <div class="youso">
-                    <input id="{{$flower->id}}" type="radio" name="flower" value="{{$flower->id}}">
-                    <label for="{{$flower->id}}">
+                    <input id="{{$flower->id.+1}}" type="radio" name="flower" value="{{$flower->id}}" required>
+                    <label for="{{$flower->id.+1}}">
                         <p class='name'>{{$flower->name}}</p>
                         <img src="{{$flower->logo}}" width=60px height=60px>
                         <p class="intro">{{$flower->explain_nowja}}</p>
@@ -107,14 +117,16 @@
                 @endforeach
             </div>
         </div>
+    </div>
 
+    <div class="selection-group">
         <div class="sheet">
-        <p class='title'>3.用紙をお選びください。</p>
+            <p class='title'>3.用紙をお選びください。</p>
             <div class="sentakusi">
                 @foreach($sheets as $sheet)
                 <div class="youso">
-                    <input id="{{$sheet->id}}" type="radio" name="sheet" value="{{$sheet->id}}">
-                    <label for="{{$sheet->id}}">
+                    <input id="{{$sheet->id.+2}}" type="radio" name="sheet" value="{{$sheet->id}}" required>
+                    <label for="{{$sheet->id.+2}}">
                         <p class='name'>{{$sheet->name}}</p>
                         <img src="{{$sheet->logo}}" width=60px height=60px>
                         <p class="intro">{{$sheet->explain_nowja}}</p>
@@ -124,14 +136,16 @@
                 @endforeach
             </div>
         </div>
+    </div>
 
+    <div class="selection-group">
         <div class="fold">
-        <p class='title'>4.折り方をお選びください。</p>
+            <p class='title'>4.折り方をお選びください。</p>
             <div class="sentakusi">
                 @foreach($folds as $fold)
                 <div class="youso">
-                    <input id="{{$fold->id}}" type="radio" name="fold" value="{{$fold->id}}">
-                    <label for="{{$fold->id}}">
+                    <input id="{{$fold->id.+3}}" type="radio" name="fold" value="{{$fold->id}}" required>
+                    <label for="{{$fold->id.+3}}">
                         <p class='name'>{{$fold->name}}</p>
                         <img src="{{$fold->logo}}" width=60px height=60px>
                         <p class="intro">{{$fold->explain_nowja}}</p>
@@ -141,6 +155,7 @@
                 @endforeach
             </div>
         </div>
+    </div>
 
 
 
@@ -148,7 +163,7 @@
     </div>
     <input type="submit">
     </form>
-    @endsection
+@endsection
 
     @section('footer')
     @parent 
