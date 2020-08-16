@@ -161,7 +161,7 @@
 
 
     </div>
-    <input type="submit">
+    <input type="submit" name="送信内容確認">
     </form>
 @endsection
 

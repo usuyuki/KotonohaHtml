@@ -31,7 +31,7 @@ class SendController extends Controller
 
     public function confirm(Request $request){
         
-        return view('kotonoha.send',$data);
+        return view('kotonoha.confirm',$data);
     }
 
     public function post(Request $request){

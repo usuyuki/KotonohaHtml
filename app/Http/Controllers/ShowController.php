@@ -11,7 +11,7 @@ use App\Sheet;
 
 class ShowController extends Controller
 {
-    public function show(){
+    public function show(Request $request){
         $uuid =$request->id;
         $user = Mail::where('uuid', '=', $uuid)->first();
         $fold = Fold::where('id','=',$user->fold_id)->first();

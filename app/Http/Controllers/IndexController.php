@@ -11,6 +11,7 @@ class IndexController extends Controller
     }
 
     public function contact(){
+        
         return view('kotonoha.contact');
     }
 }
