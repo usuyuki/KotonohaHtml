@@ -40,7 +40,7 @@ class SendController extends Controller
 
         //URL渡す
         $uuid=Str::uuid();
-        $url = "http://127.0.0.1:8000/show/".$uuid;
+        $url = url('/')."/show/".$uuid;
 
         //データ格納
         $user_location = Mail::create($request->all() +array('uuid'=>$uuid));

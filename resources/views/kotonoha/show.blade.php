@@ -18,8 +18,12 @@
 </style>
 @section('content')
     <p>お手紙です。</p>
-    <p>{{$from}}より</p>
-    <p>{{$for}}へ</p>
+    <div class="waku">
+    <p>{{$from}}<br>より</p>
+    </div>
+    <div class="waku">
+    <p>{{$for}}<br>へ</p>
+    </div>
     <div class="waku">
     <h2>本文</h2>
     <p>{{$text}}</div>
