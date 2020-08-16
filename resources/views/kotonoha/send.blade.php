@@ -71,7 +71,6 @@
 @endsection
 @section('content')
 
-    <h1>Post</h1>
     <p>ここは手紙を送るページです。</p>
     <form method="POST" action="/send/done">
     @csrf

@@ -17,7 +17,7 @@ a.btn--orange:hover {
 @endsection
 
 @section('content')
-    <p>言の葉HTMLへようこそ</p>
+    <h2>言の葉HTMLへようこそ</h2>
     <p>言の葉HTMLでは縦書きの手紙に様々な付加価値を添えて送ることができます。</p>
     @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスは永遠にβ版です。また、このサービスは暗号化してません。流出すると困る情報は送らないでください。'])
     <p> </p>
