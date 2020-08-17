@@ -4,7 +4,7 @@
     <style>
     @font-face {
 	font-family: 'はんなり明朝';
-	src: url(/storage/fonts/hannari/Hannari.otf)format('opentype');
+	src: url(/fonts/hannari/Hannari.otf)format('opentype');
     }
 
     body {font-size:16pt; color:#999; margin:5px; font-family: はんなり明朝;}
