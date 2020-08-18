@@ -1,10 +1,21 @@
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175673455-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175673455-1');
+    </script>
+
     <title>@yield('title')</title>
+    
     <style>
     @font-face {
 	font-family: 'はんなり明朝';
-	src: url(/fonts/hannari/Hannari.otf)format('opentype');
+	src: url("/fonts/hannari/Hannari.otf")format('opentype');
     }
 
     body {font-size:16pt; color:#999; margin:5px; font-family: はんなり明朝;}
