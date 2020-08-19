@@ -39,8 +39,8 @@ body {
 
     <h2 class="menutitle">　</h2>
     <a href="../">トップ</a>
-    <a href="./send">手紙を送る</a>
-    <a href="./contact">お問い合わせ</a>
+    <a href="../send">手紙を送る</a>
+    <a href="../contact">お問い合わせ</a>
     @show
     <hr size="1">
     <div class="content">

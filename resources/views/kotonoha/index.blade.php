@@ -11,6 +11,9 @@ a.btn--orange:hover {
   color: #fff;
   background: #669966;
 }
+p.torikesi {
+  text-decoration: line-through;
+}
 </style>
 @section('menubar')
     @parent
@@ -25,7 +28,7 @@ a.btn--orange:hover {
     <h3>使い方</h3>
     <p>壱.下記ページへ遷移してください。</p>
     <a href="./send" class="btn btn--orange" target="_blank">手紙を送る</a>
-    <p>弐.手紙や付加価値を選んで「送信内容確認」を押下します。</p>
+    <p class="torikesi">弐.手紙や付加価値を選んで「送信内容確認」を押下します。</p>
     <p>参.問題なければ「文使いに渡す」を押下します。</p>
     <p>肆.完了画面と共にリンクが表示されますので、複製を押下してリンクを複製した後、SNSなどで送り先へリンクを共有してください。</p>
     <p>伍.リンクを開くと手紙が確認できます。</p>
