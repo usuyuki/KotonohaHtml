@@ -29,7 +29,6 @@ class ShowController extends Controller
             'flower'=>$flower,
             'sheet'=>$sheet
         ];
-        \Log::debug($data);
 
         return view('kotonoha.show',$data);
     }

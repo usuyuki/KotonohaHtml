@@ -60,7 +60,18 @@
         border-radius: 10px;/*角の丸み*/
         float: left;
     }
-    
+    .botan-susumu {
+    width:200px;
+    font-size:24px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#fff;
+    background-color:green;
+    border-radius:5px;
+    font-family: はんなり明朝;
+    margin: 0 auto; 
 
 
     </style>
@@ -72,7 +83,7 @@
 @section('content')
 
     <h2>ここは手紙を送るページです。</h2>
-    <form method="POST" action="/send/done">
+    <form method="POST" action="/send/confirm">
     @csrf
     <p>宛名</p>
     <input type="text" name="for">
@@ -160,7 +171,7 @@
 
 
     </div>
-    <input type="submit" name="文使いに渡たす">
+    <input type="submit" value="確認" class="botan-susumu">
     </form>
 @endsection
 
