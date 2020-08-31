@@ -79,7 +79,11 @@
     border-radius:5px;
     font-family: はんなり明朝;
     margin: 0 auto; 
-
+    }
+    .mannaka{
+        text-align:center;
+        font-size:17px;
+    }
 
     </style>
 </head>
@@ -177,10 +181,9 @@
         </div>
     </div>
     <p></p>
-
-
-
+    <!-- ↓これはsection-groupのdivの終了タグ -->
     </div>
+    <p class="mannaka">※すべて選択しないと確認ボタンは押せません。</p>
     <input type="submit" value="確認" class="botan-susumu">
     </form>
 @endsection
