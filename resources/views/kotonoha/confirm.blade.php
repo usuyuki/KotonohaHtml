@@ -6,14 +6,13 @@
 
 <style>
 .waku{
-    padding: 0.5em 1em;
+        padding: 0.5em 1em;
         margin: 2em 0;
         font-weight: bold;
-        color: green;/*文字色*/
+        color: #6091d3;/*文字色*/
         background: #FFF;
-        border: solid 3px green;/*線*/
+        border: solid 3px #6091d3;/*線*/
         border-radius: 10px;/*角の丸み*/
-        /* float: left; */
 }
 
 .botan-susumu {
@@ -24,7 +23,7 @@
     text-align:center;
     padding:8px 0 10px;
     color:#fff;
-    background-color:green;
+    background-color:#6091d3;
     border-radius:5px;
     font-family: はんなり明朝;
     margin: 0 auto; 
@@ -37,7 +36,7 @@
     text-align:center;
     padding:8px 0 10px;
     color:#fff;
-    background-color:green;
+    background-color:#6091d3;
     border-radius:5px;
     font-family: はんなり明朝;
     margin: 0 auto; 

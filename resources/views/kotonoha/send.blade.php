@@ -16,7 +16,7 @@
         font-size:12pt;
     }
     p.title{
-        font-size:18pt; color:#Black;
+        font-size:22pt; color:#Black font-weight: bold;
     }
     p.name{
         font-size:18pt; color:#Black; font-weight: bold;
@@ -49,6 +49,13 @@
     /* 横並べと枠囲み */
     .sentakusi{
         overflow: hidden;
+
+    }
+    .waku{
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        border: solid 3px #336699;/*線*/
+        border-radius: 10px;/*角の丸み*/
     }
     .youso{
         padding: 0.5em 1em;
@@ -68,7 +75,7 @@
     text-align:center;
     padding:8px 0 10px;
     color:#fff;
-    background-color:green;
+    background-color:#6091d3;
     border-radius:5px;
     font-family: はんなり明朝;
     margin: 0 auto; 
@@ -91,10 +98,10 @@
     <input type="text" name="from">
     <p>本文</p>
     <textarea cols="60" rows="10" name="text"></textarea>
-
+    <p></p>
     <!-- 付加価値コーナー -->
     <div class="selection-group">
-        <div class="scents">
+        <div class="waku">
         <p class='title'>1.香りをお選びください。</p>
             <div class="sentakusi">
                 @foreach($scents as $scent)
@@ -110,9 +117,10 @@
             </div>
         </div>
     </div>
-    
+    <p></p>
+
     <div class="selection-group">
-        <div class="flower">
+        <div class="waku">
         <p class='title'> 2.添え花をお選びください。</p>
             <div class="sentakusi">
                 @foreach($flowers as $flower)
@@ -128,9 +136,10 @@
             </div>
         </div>
     </div>
+    <p></p>
 
     <div class="selection-group">
-        <div class="sheet">
+        <div class="waku">
             <p class='title'>3.用紙をお選びください。</p>
             <div class="sentakusi">
                 @foreach($sheets as $sheet)
@@ -147,9 +156,10 @@
             </div>
         </div>
     </div>
+    <p></p>
 
     <div class="selection-group">
-        <div class="fold">
+        <div class="waku">
             <p class='title'>4.折り方をお選びください。</p>
             <div class="sentakusi">
                 @foreach($folds as $fold)
@@ -166,7 +176,7 @@
             </div>
         </div>
     </div>
-
+    <p></p>
 
 
 
