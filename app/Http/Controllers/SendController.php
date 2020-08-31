@@ -61,7 +61,7 @@ class SendController extends Controller
 
         //URL渡す
         $uuid=Str::uuid();
-        $url = url('/')."/show/".$uuid;
+        $url = url('/', null, true)."/show/".$uuid;
         
         //セッションから値を取り出す
         $input = $request->session()->get("otegami");
