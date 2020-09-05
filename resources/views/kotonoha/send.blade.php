@@ -90,7 +90,15 @@
         text-align:center;
         font-size:17px;
     }
+    .moziwaku{
+        border: 1px solid #6091d3;
+    }
+    .moziwaku:focus{
+        border: 1px solid #396196;
+        /* background: #c2dcff;文字入力中の枠の色 */
+        /* opacity:0.3;透明度 */
 
+}
 
     </style>
 </head>
@@ -104,11 +112,11 @@
     <form method="POST" action="/send/confirm">
     @csrf
     <p>宛名</p>
-    <input type="text" name="for"class="hekomi" required>
+    <input type="text" name="for"class="moziwaku" required>
     <p>送り主</p>
-    <input type="text" name="from"class="hekomi" required>  
+    <input type="text" name="from"class="moziwaku" required>  
     <p>本文</p>
-    <textarea cols="60" rows="10" name="text" class="hekomi" required></textarea>
+    <textarea cols="60" rows="10" name="text" class="moziwaku" required></textarea>
     <p></p>
     <!-- 付加価値コーナー -->
     <div class="selection-group">
