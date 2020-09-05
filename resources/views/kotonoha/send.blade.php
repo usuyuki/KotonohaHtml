@@ -27,17 +27,15 @@
     .selection-group input[type="radio"] {
     display: none;
     }
-    /* 選択されたラジオボタンの画像の背景をうぐいす色に変える */
+    /* 選択されたラジオボタンの画像の背景を水色に変える */
     .selection-group input[type="radio"]:checked + label img {
-    background: #669999;
+    background: #6091d3;
     }
     .selection-group input[type="radio"] {
     display: none;
     }
-    /* 選択されたラジオボタンの画像の背景をうぐいす色に変える */
-    .selection-group input[type="radio"]:checked + label img {
-    background: #669999;
-    }
+
+
     
     /* 画像部分に余白を持たせる、枠囲みする */
     label img {
@@ -70,6 +68,9 @@
         border-radius: 10px;/*角の丸み*/
         float: left;
     }
+    .youso:hover{
+        border: dashed 3px #6091d3;;
+    }
     .botan-susumu {
         width:200px;
         font-size:24px;
@@ -86,7 +87,7 @@
     .botan-susumu:hover{
         background-color:#5179b0;
     }
-    .mannaka{
+    .tyuui{
         text-align:center;
         font-size:17px;
     }
@@ -118,7 +119,9 @@
     <p>本文</p>
     <textarea cols="60" rows="10" name="text" class="moziwaku" required></textarea>
     <p></p>
+    
     <!-- 付加価値コーナー -->
+    <p class="tyuui">↓枠内の文字または絵を選択してください。枠の空白部分は反応しません。↓</p>
     <div class="selection-group">
         <div class="waku">
         <p class='title'>1.香りをお選びください。</p>
@@ -198,7 +201,7 @@
     <p></p>
     <!-- ↓これはsection-groupのdivの終了タグ -->
     </div>
-    <p class="mannaka">※すべて選択しないと確認ボタンは押せません。</p>
+    <p class="tyuui">※すべて選択しないと確認ボタンは押せません。</p>
     <input type="submit" value="確認" class="botan-susumu">
     </form>
 @endsection

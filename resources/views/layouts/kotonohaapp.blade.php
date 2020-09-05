@@ -40,7 +40,7 @@
 
     }
     .page-seni:hover{
-        background: #003300;/*背景色*/
+        background: #005e00;/*背景色*/
     }
         
     </style>
