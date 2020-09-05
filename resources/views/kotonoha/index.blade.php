@@ -1,15 +1,15 @@
 @extends('layouts.kotonohaapp')
 @section('title','言の葉HTML')
 <style>
-.btn--orange,
-a.btn--orange {
-  color: #fff;
+.btn--green,
+a.btn--green {
+  color: black;
   background-color: #669966;
 }
-.btn--orange:hover,
-a.btn--orange:hover {
-  color: #fff;
-  background: #669966;
+.btn--green:hover,
+a.btn--green:hover {
+  color: white;
+  background: #3d5e3d;
 }
 p.torikesi {
   text-decoration: line-through;
@@ -27,7 +27,7 @@ p.torikesi {
     @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver1.11を公開しました。変更内容：送信確認画面を追加しました。見やすさのための細かな修正を加えました。'])
     <h3>使い方</h3>
     <p>壱.下記ページへ遷移してください。</p>
-    <a href="./send" class="btn btn--orange" target="_blank">手紙を送る</a>
+    <a href="./send" class="btn btn--green" target="_blank">手紙を送る</a>
     <p>弐.手紙や付加価値を選んで「送信内容確認」を押下します。</p>
     <p>参.問題なければ「文使いに渡す」を押下します。</p>
     <p>肆.完了画面と共にリンクが表示されますので、複製を押下してリンクを複製した後、SNSなどで送り先へリンクを共有してください。</p>

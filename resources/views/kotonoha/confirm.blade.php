@@ -28,6 +28,9 @@
     font-family: はんなり明朝;
     margin: 0 auto; 
 }
+.botan-susumu:hover{
+    background-color:#5179b0;
+    }
 .botan-modoru {
     width:100px;
     font-size:18px;
@@ -41,6 +44,9 @@
     font-family: はんなり明朝;
     margin: 0 auto; 
 }
+.botan-modoru:hover{
+    background-color:#5179b0;
+    }
 
 </style>
 @section('content')

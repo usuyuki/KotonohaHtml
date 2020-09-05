@@ -49,17 +49,20 @@
     /* 横並べと枠囲み */
     .sentakusi{
         overflow: hidden;
+        display:flex;/*要素を横並びに*/
+        justify-content: center;/*要素を中央中心に広げる*/
 
     }
     .waku{
         padding: 0.5em 1em;
         margin: 2em 0;
+
         border: solid 3px #336699;/*線*/
         border-radius: 10px;/*角の丸み*/
     }
     .youso{
         padding: 0.5em 1em;
-        margin: 2em 0;
+        margin: 2em 0.5em 0.5em 0;/*枠同士の幅を調整*/
         font-weight: bold;
         color: #6091d3;/*文字色*/
         background: #FFF;
@@ -68,22 +71,26 @@
         float: left;
     }
     .botan-susumu {
-    width:200px;
-    font-size:24px;
-    text-decoration:none;
-    display:block;
-    text-align:center;
-    padding:8px 0 10px;
-    color:#fff;
-    background-color:#6091d3;
-    border-radius:5px;
-    font-family: はんなり明朝;
-    margin: 0 auto; 
+        width:200px;
+        font-size:24px;
+        text-decoration:none;
+        display:block;
+        text-align:center;
+        padding:8px 0 10px;
+        color:#fff;
+        background-color:#6091d3;
+        border-radius:5px;
+        font-family: はんなり明朝;
+        margin: 0 auto; 
+    }
+    .botan-susumu:hover{
+        background-color:#5179b0;
     }
     .mannaka{
         text-align:center;
         font-size:17px;
     }
+
 
     </style>
 </head>
@@ -97,11 +104,11 @@
     <form method="POST" action="/send/confirm">
     @csrf
     <p>宛名</p>
-    <input type="text" name="for">
+    <input type="text" name="for"class="hekomi" required>
     <p>送り主</p>
-    <input type="text" name="from">
+    <input type="text" name="from"class="hekomi" required>  
     <p>本文</p>
-    <textarea cols="60" rows="10" name="text"></textarea>
+    <textarea cols="60" rows="10" name="text" class="hekomi" required></textarea>
     <p></p>
     <!-- 付加価値コーナー -->
     <div class="selection-group">

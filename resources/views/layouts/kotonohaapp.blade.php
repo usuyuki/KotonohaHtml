@@ -25,12 +25,24 @@
     .menutitle {font-size:14pt; font-weight:bold; margin:0px;font-family: はんなり明朝;}
     .content {margin:10px;font-family: はんなり明朝;}
     .footer{text-align:right; font-size:10pt; margin:10px; border-bottom:solid 1px #ccc; color:#ccc;font-family: はんなり明朝;}
+    .page-seni a{
+        color: white;
+        text-decoration: none;
+    }
+    .page-seni{
+        display: inline;
+        position: relative;
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        background: green;/*背景色*/
+        border-radius: 4px;/*角の丸み*/
+        box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
 
-
-body {
-	font-family: MyFont;
-}
-    
+    }
+    .page-seni:hover{
+        background: #003300;/*背景色*/
+    }
+        
     </style>
 </head>
 <body>
@@ -38,9 +50,15 @@ body {
     @section('menubar')
 
     <h2 class="menutitle">　</h2>
+    <div class="page-seni">
     <a href="../">トップ</a>
+    </div>
+    <div class="page-seni">
     <a href="../send">手紙を送る</a>
+    </div>
+    <div class="page-seni">
     <a href="../contact">お問い合わせ</a>
+    </div>
     @show
     <hr size="1">
     <div class="content">
