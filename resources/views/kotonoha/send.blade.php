@@ -47,6 +47,7 @@
             overflow: hidden;
             display:flex;/*要素を横並びに*/
             justify-content: center;/*要素を中央中心に広げる*/
+            flex-wrap:wrap;/*要素を折り返す*/
 
         }
         .waku{
@@ -56,6 +57,10 @@
             border: solid 3px #336699;/*線*/
             border-radius: 10px;/*角の丸み*/
         }
+        .youso p{
+            width: 200px;/*文字の幅設定*/
+
+        }
         .youso{
             padding: 0.5em 1em;
             margin: 2em 0.5em 0.5em 0;/*枠同士の幅を調整*/
@@ -64,7 +69,8 @@
             background: #FFF;
             border: solid 3px #6091d3;/*線*/
             border-radius: 10px;/*角の丸み*/
-            float: left;
+            word-break: break-all;/*文字の折返し*/
+
         }
         .youso:hover{
             border: dashed 3px #6091d3;;
@@ -119,7 +125,7 @@
     <p></p>
     
     <!-- 付加価値コーナー -->
-    <p class="tyuui">↓枠内の文字または絵を選択してください。枠の空白部分は反応しません。↓</p>
+    <p class="tyuui">↓枠内の文字または絵をクリックまたはタップしてください。枠の空白部分は反応しません。↓</p>
     <div class="selection-group">
         <div class="waku">
         <p class='title'>1.香りをお選びください。</p>
