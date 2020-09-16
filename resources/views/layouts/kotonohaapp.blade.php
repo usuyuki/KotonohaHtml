@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>@yield('title')</title>
+    <meta name="description" content="言の葉HTMLは手紙に付加価値を加えて送れるwebアプリです。">
     <meta charset="utf-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175673455-1"></script>
@@ -23,6 +24,7 @@
 
     body {font-size:16pt; color:#999; margin:5px; font-family: はんなり明朝;}
     h1 {font-size:50pt; text-align:left; color:green; margin:-20px 0px -30px 0px; letter-spacing:-4pt; font-family: はんなり明朝;}
+    h3 { line-height: 0.5em; }
     u1 {font-size:12pt; はんなり明朝;}
     hr {margin:25px 100px; border-top:1px dashed #ddd; font-family: はんなり明朝;}
     .menutitle {font-size:14pt; font-weight:bold; margin:0px;font-family: はんなり明朝;}
@@ -70,8 +72,10 @@
     <div class="footer">
     @yield('footer')
     <h3>このサービスは暗号化していません。流出すると困る情報は送らないでください。</h3>
+    <h3>本サイトでは、閲覧状況に関する統計を取るためにGoogleアナリティクスを使用しています。</h3>
     <h3>copyright 2020 usuyuki.</h3>
     </div>
+    
 </body>
 
 </html>
