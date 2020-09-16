@@ -1,108 +1,106 @@
 @extends('layouts.kotonohaapp')
-@section('title','言の葉HTML')
-<head>
-    <title>手紙を送る</title>
+@section('title','手紙を送る')
     <style>
-    @font-face {
-	font-family: 'はんなり明朝';
-	src: url(/storage/fonts/hannari/Hannari.otf)format('opentype');
-    }
-    p{font-family: はんなり明朝;}
-    body {font-size:16pt; color:#999; font-family: はんなり明朝;}
-    h1 {font-size:100pt; text-align:right; color:#f6f6f6; margin:-50px 0px -100px 0px; letter-spacing:-4pt; font-family: はんなり明朝;}
+        @font-face {
+        font-family: 'はんなり明朝';
+        src: url(/storage/fonts/hannari/Hannari.otf)format('opentype');
+        }
+        p{font-family: はんなり明朝;}
+        body {font-size:16pt; color:#999; font-family: はんなり明朝;}
+        h1 {font-size:100pt; text-align:right; color:#f6f6f6; margin:-50px 0px -100px 0px; letter-spacing:-4pt; font-family: はんなり明朝;}
 
-    /* 説明の文字サイズを小さくする */
-    p.intro{
-        font-size:12pt;
-    }
-    p.title{
-        font-size:22pt; color:#Black font-weight: bold;
-    }
-    p.name{
-        font-size:18pt; color:#Black; font-weight: bold;
-    }
-
-
-    /* ラジオボタンを消す */
-    .selection-group input[type="radio"] {
-    display: none;
-    }
-    /* 選択されたラジオボタンの画像の背景を水色に変える */
-    .selection-group input[type="radio"]:checked + label img {
-    background: #6091d3;
-    }
-    .selection-group input[type="radio"] {
-    display: none;
-    }
+        /* 説明の文字サイズを小さくする */
+        p.intro{
+            font-size:12pt;
+        }
+        p.title{
+            font-size:22pt; color:#Black font-weight: bold;
+        }
+        p.name{
+            font-size:18pt; color:#Black; font-weight: bold;
+        }
 
 
-    
-    /* 画像部分に余白を持たせる、枠囲みする */
-    label img {
-    margin: 3px;
-    padding: 8px;
-    border: 4px solid black;
-    }
-    
-    /* 横並べと枠囲み */
-    .sentakusi{
-        overflow: hidden;
-        display:flex;/*要素を横並びに*/
-        justify-content: center;/*要素を中央中心に広げる*/
+        /* ラジオボタンを消す */
+        .selection-group input[type="radio"] {
+        display: none;
+        }
+        /* 選択されたラジオボタンの画像の背景を水色に変える */
+        .selection-group input[type="radio"]:checked + label img {
+        background: #6091d3;
+        }
+        .selection-group input[type="radio"] {
+        display: none;
+        }
 
-    }
-    .waku{
-        padding: 0.5em 1em;
-        margin: 2em 0;
 
-        border: solid 3px #336699;/*線*/
-        border-radius: 10px;/*角の丸み*/
-    }
-    .youso{
-        padding: 0.5em 1em;
-        margin: 2em 0.5em 0.5em 0;/*枠同士の幅を調整*/
-        font-weight: bold;
-        color: #6091d3;/*文字色*/
-        background: #FFF;
-        border: solid 3px #6091d3;/*線*/
-        border-radius: 10px;/*角の丸み*/
-        float: left;
-    }
-    .youso:hover{
-        border: dashed 3px #6091d3;;
-    }
-    .botan-susumu {
-        width:200px;
-        font-size:24px;
-        text-decoration:none;
-        display:block;
-        text-align:center;
-        padding:8px 0 10px;
-        color:#fff;
-        background-color:#6091d3;
-        border-radius:5px;
-        font-family: はんなり明朝;
-        margin: 0 auto; 
-    }
-    .botan-susumu:hover{
-        background-color:#5179b0;
-    }
-    .tyuui{
-        text-align:center;
-        font-size:17px;
-    }
-    .moziwaku{
-        border: 1px solid #6091d3;
-    }
-    .moziwaku:focus{
-        border: 1px solid #396196;
-        /* background: #c2dcff;文字入力中の枠の色 */
-        /* opacity:0.3;透明度 */
+        
+        /* 画像部分に余白を持たせる、枠囲みする */
+        label img {
+        margin: 3px;
+        padding: 8px;
+        border: 4px solid black;
+        }
+        
+        /* 横並べと枠囲み */
+        .sentakusi{
+            overflow: hidden;
+            display:flex;/*要素を横並びに*/
+            justify-content: center;/*要素を中央中心に広げる*/
 
-}
+        }
+        .waku{
+            padding: 0.5em 1em;
+            margin: 2em 0;
+
+            border: solid 3px #336699;/*線*/
+            border-radius: 10px;/*角の丸み*/
+        }
+        .youso{
+            padding: 0.5em 1em;
+            margin: 2em 0.5em 0.5em 0;/*枠同士の幅を調整*/
+            font-weight: bold;
+            color: #6091d3;/*文字色*/
+            background: #FFF;
+            border: solid 3px #6091d3;/*線*/
+            border-radius: 10px;/*角の丸み*/
+            float: left;
+        }
+        .youso:hover{
+            border: dashed 3px #6091d3;;
+        }
+        .botan-susumu {
+            width:200px;
+            font-size:24px;
+            text-decoration:none;
+            display:block;
+            text-align:center;
+            padding:8px 0 10px;
+            color:#fff;
+            background-color:#6091d3;
+            border-radius:5px;
+            font-family: はんなり明朝;
+            margin: 0 auto; 
+        }
+        .botan-susumu:hover{
+            background-color:#5179b0;
+        }
+        .tyuui{
+            text-align:center;
+            font-size:17px;
+        }
+        .moziwaku{
+            border: 1px solid #6091d3;
+        }
+        .moziwaku:focus{
+            border: 1px solid #396196;
+            /* background: #c2dcff;文字入力中の枠の色 */
+            /* opacity:0.3;透明度 */
+
+        }
 
     </style>
-</head>
+
 <body>
 @section('menubar')
     @parent

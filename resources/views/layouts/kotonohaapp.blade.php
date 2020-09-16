@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <title>@yield('title')</title>
+    <meta charset="utf-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175673455-1"></script>
     <script>
@@ -9,10 +12,10 @@
 
     gtag('config', 'UA-175673455-1');
     </script>
-
-    <title>@yield('title')</title>
     
-    <style>
+</head>
+
+<style>
     @font-face {
 	font-family: 'はんなり明朝';
 	src: url("/fonts/hannari/Hannari.otf")format('opentype');
@@ -43,10 +46,10 @@
         background: #005e00;/*背景色*/
     }
         
-    </style>
-</head>
+</style>
+
 <body>
-    <h1>@yield('title')</h1>
+    <h1>言の葉HTML</h1>
     @section('menubar')
 
     <h2 class="menutitle">　</h2>

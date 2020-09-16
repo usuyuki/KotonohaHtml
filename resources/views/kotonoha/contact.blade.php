@@ -1,5 +1,5 @@
 @extends('layouts.kotonohaapp')
-@section('title','言の葉HTML')
+@section('title','お問い合わせ')
 <style>
 .btn--orange,
 a.btn--orange {

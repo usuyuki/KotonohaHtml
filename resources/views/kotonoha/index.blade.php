@@ -1,5 +1,13 @@
 @extends('layouts.kotonohaapp')
 @section('title','言の葉HTML')
+
+@section('menubar')
+    @parent
+@endsection
+
+
+
+@section('content')
 <style>
 .btn--green,
 a.btn--green {
@@ -15,16 +23,12 @@ p.torikesi {
   text-decoration: line-through;
 }
 </style>
-@section('menubar')
-    @parent
-@endsection
 
-@section('content')
     <h2>言の葉HTMLへようこそ</h2>
     <p>言の葉HTMLでは縦書きの手紙に様々な付加価値を添えて送ることができます。</p>
     @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスは永遠にβ版です。また、このサービスは暗号化してません。流出すると困る情報は送らないでください。'])
     <p> </p>
-    @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver1.21を公開しました。変更内容：より素敵なUIになりました。'])
+    @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.0を公開しました。変更内容：技術的なアップデートです。'])
     <h3>使い方</h3>
     <p>壱.下記ページへ遷移してください。</p>
     <a href="./send" class="btn btn--green" target="_blank">手紙を送る</a>
