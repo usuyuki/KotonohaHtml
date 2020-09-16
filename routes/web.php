@@ -25,4 +25,8 @@ Route::get('send/done','SendController@post');
 //表示ページ
 Route::get('show/{id}','ShowController@show');
 
+//データーベース全体表示テスト
+Route::get('developer/database/show','IndexController@allshow');
+
+
 

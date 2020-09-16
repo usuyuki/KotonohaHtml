@@ -114,7 +114,7 @@
     @csrf
     <p>宛名</p>
     <input type="text" name="for"class="moziwaku" required>
-    <p>送り主</p>
+    <p>差出人</p>
     <input type="text" name="from"class="moziwaku" required>  
     <p>本文</p>
     <textarea cols="60" rows="10" name="text" class="moziwaku" required></textarea>
