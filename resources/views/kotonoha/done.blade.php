@@ -38,7 +38,23 @@
 .copy_btn:hover {
 	cursor: pointer;
 }
-
+.botan-kakunin {
+    text-decoration:none;
+    width:40%!important;
+    font-size:18px;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#ffffff;
+    background-color:green;
+    border-radius:5px;
+    font-family: はんなり明朝;
+    margin: 10 auto; 
+}
+.botan-kakunin:hover{
+    background: #006600;
+    color: #000000;
+    }
 
 </style>
 
@@ -50,10 +66,17 @@
 @section('content')
     <h2>文使いに渡されました。</h2>
     <div class="waku">
-    <h2>{{$url}}</h2>
-    <p>上記URLを複製してSNSなどで送り先へリンクを共有してください。</p>
-    <div class="copy_btn" data-clipboard-text="{{$url}}">上記リンクを複製する</div>
+        <h2>{{$url}}</h2>
+        <p>上記URLを複製してSNSなどで送り先へリンクを共有してください。</p>
+        <div class="copy_btn" data-clipboard-text="{{$url}}">上記リンクを複製する</div>
+        
+
+        <a href="{{$url}}" class="botan-kakunin" target="_blank">送られた手紙を確認する</a>   
+
+
     </div>
+
+
 
 
 @endsection

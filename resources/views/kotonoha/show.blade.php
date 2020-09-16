@@ -17,7 +17,7 @@
 }
 </style>
 @section('content')
-    <p>お手紙です。</p>
+    <h2>お手紙です</h2>
     <div class="waku">
     <p>{{$from}}<br>より</p>
     </div>

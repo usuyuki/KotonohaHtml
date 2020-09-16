@@ -1,17 +1,6 @@
 @extends('layouts.kotonohaapp')
 @section('title','お問い合わせ')
-<style>
-.btn--orange,
-a.btn--orange {
-  color: #fff;
-  background-color: #669966;
-}
-.btn--orange:hover,
-a.btn--orange:hover {
-  color: #fff;
-  background: #669966;
-}
-</style>
+
 @section('menubar')
     @parent
 @endsection
