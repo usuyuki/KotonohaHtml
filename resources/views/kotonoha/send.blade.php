@@ -134,20 +134,20 @@
     </div>
     
     <!-- 付加価値コーナー -->
-    <p class="tyuui">↓枠内の文字または絵をクリックまたはタップしてください。枠の空白部分は反応しません。↓</p>
+    <p class="tyuui">枠内をクリックまたはタップしてそれぞれ1つづつお選びください</p>
     <div class="selection-group">
         <div class="waku">
         <p class='title'>1.香りをお選びください。</p>
             <div class="sentakusi">
                 @foreach($scents as $scent)
-                <div class="youso">
                     <input id="{{$scent->id}}" type="radio" name="scent_id" value="{{$scent->id}}" required>
                     <label for="{{$scent->id}}">
-                        <p class="name">{{$scent->name}}</p>
-                        <img src="{{$scent->logo}}" width=60px height=60px>
-                        <p class="intro">{{$scent->explain_nowja}}</p>
+                        <div class="youso">
+                            <p class="name">{{$scent->name}}</p>
+                            <img src="{{$scent->logo}}" width=60px height=60px>
+                            <p class="intro">{{$scent->explain_nowja}}</p>
+                        </div>
                     </label>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -159,14 +159,14 @@
         <p class='title'> 2.添え花をお選びください。</p>
             <div class="sentakusi">
                 @foreach($flowers as $flower)
-                <div class="youso">
                     <input id="{{$flower->id.+1}}" type="radio" name="flower_id" value="{{$flower->id}}" required>
                     <label for="{{$flower->id.+1}}">
-                        <p class='name'>{{$flower->name}}</p>
-                        <img src="{{$flower->logo}}" width=60px height=60px>
-                        <p class="intro">{{$flower->explain_nowja}}</p>
+                        <div class="youso">
+                            <p class='name'>{{$flower->name}}</p>
+                            <img src="{{$flower->logo}}" width=60px height=60px>
+                            <p class="intro">{{$flower->explain_nowja}}</p>
+                        </div>
                     </label>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -178,15 +178,14 @@
             <p class='title'>3.用紙をお選びください。</p>
             <div class="sentakusi">
                 @foreach($sheets as $sheet)
-                <div class="youso">
                     <input id="{{$sheet->id.+2}}" type="radio" name="sheet_id" value="{{$sheet->id}}" required>
                     <label for="{{$sheet->id.+2}}">
-                        <p class='name'>{{$sheet->name}}</p>
-                        <img src="{{$sheet->logo}}" width=60px height=60px>
-                        <p class="intro">{{$sheet->explain_nowja}}</p>
-
+                        <div class="youso">
+                            <p class='name'>{{$sheet->name}}</p>
+                            <img src="{{$sheet->logo}}" width=60px height=60px>
+                            <p class="intro">{{$sheet->explain_nowja}}</p>
+                        </div>
                     </label>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -198,15 +197,14 @@
             <p class='title'>4.折り方をお選びください。</p>
             <div class="sentakusi">
                 @foreach($folds as $fold)
-                <div class="youso">
                     <input id="{{$fold->id.+3}}" type="radio" name="fold_id" value="{{$fold->id}}" required>
                     <label for="{{$fold->id.+3}}">
-                        <p class='name'>{{$fold->name}}</p>
-                        <img src="{{$fold->logo}}" width=60px height=60px>
-                        <p class="intro">{{$fold->explain_nowja}}</p>
-
+                        <div class="youso">
+                            <p class='name'>{{$fold->name}}</p>
+                            <img src="{{$fold->logo}}" width=60px height=60px>
+                            <p class="intro">{{$fold->explain_nowja}}</p>
+                        </div>
                     </label>
-                </div>
                 @endforeach
             </div>
         </div>

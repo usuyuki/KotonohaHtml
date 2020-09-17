@@ -32,7 +32,7 @@ p.torikesi {
     <p>言の葉HTMLでは縦書きの手紙に様々な付加価値を添えて送ることができます。</p>
     @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスは永遠にβ版です。また、このサービスは暗号化してません。流出すると困る情報は送らないでください。'])
     <p> </p>
-    @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.3を公開しました。変更内容：説明に画像を追加しました。'])
+    @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.5を公開しました。変更内容：デザインの改善をしました。'])
     <h3>使い方</h3>
     <p>壱.手紙を送るページへ遷移してください。</p>
     <a href="./send" class="btn--green" target="_blank">手紙を送る</a>
