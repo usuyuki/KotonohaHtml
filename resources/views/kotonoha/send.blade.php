@@ -104,6 +104,14 @@
             /* opacity:0.3;透明度 */
 
         }
+        .center{
+            text-align:center
+        }
+        textarea {
+            resize: none;
+            /* width:300px;
+            height:200px; */
+        }
 
     </style>
 
@@ -112,17 +120,18 @@
     @parent
 @endsection
 @section('content')
-
-    <h2>ここは手紙を送るページです。</h2>
-    <form method="POST" action="/send/confirm">
-    @csrf
-    <p>宛名</p>
-    <input type="text" name="for"class="moziwaku" required>
-    <p>差出人</p>
-    <input type="text" name="from"class="moziwaku" required>  
-    <p>本文</p>
-    <textarea cols="60" rows="10" name="text" class="moziwaku" required></textarea>
-    <p></p>
+    <div class="center">
+        <h2>ここは手紙を送るページです。</h2>
+        <form method="POST" action="/send/confirm">
+        @csrf
+        <p>宛名</p>
+        <input type="text" name="for"class="moziwaku" required>
+        <p>差出人</p>
+        <input type="text" name="from"class="moziwaku" required>  
+        <p>本文</p>
+        <textarea cols="120" rows="20" name="text" class="moziwaku" required></textarea>
+        <p></p>
+    </div>
     
     <!-- 付加価値コーナー -->
     <p class="tyuui">↓枠内の文字または絵をクリックまたはタップしてください。枠の空白部分は反応しません。↓</p>
