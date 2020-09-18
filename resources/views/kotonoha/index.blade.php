@@ -34,9 +34,12 @@ p.torikesi {
     <p> </p>
     @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.6を公開しました。変更内容：デザインの改善をしました。'])
     <div class="hizuke">
-      <h3>本日の日付は</h3>
-      <p>{{$year}}年{{$month}}{{$day}}日</p>
+      <h4>本日の日付は</h4>
+      <p>{{$year}}年{{$month}}{{$day}}日です。</p>
+      <h4>季節は</h4>
       <p style ="color:{{$season_color}};">{{$season_name}}です。</p>
+      <h4>時間帯は</h4>
+
     </div>
     <div class="explain">
       <h3>使い方</h3>

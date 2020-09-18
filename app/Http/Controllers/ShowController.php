@@ -12,6 +12,7 @@ use App\Sheet;
 class ShowController extends Controller
 {
     public function show(Request $request){
+        //URLパラーメタからuuid拾ってデーターベースと照らし合わせる
         $uuid =$request->id;
         $user = Mail::where('uuid', '=', $uuid)->first();
         $fold = Fold::where('id','=',$user->fold_id)->first();

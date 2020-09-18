@@ -55,6 +55,7 @@
 
 <body>
     @section('menubar')
+    <!-- 言の葉HTMLへようこそ。人生初のwebアプリです。温かい目でご利用ください。 -->
     <a href="../">
         <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px class="logo" alt="言の葉HTMLのロゴです">
     </a>

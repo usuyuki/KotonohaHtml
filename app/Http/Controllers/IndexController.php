@@ -9,6 +9,7 @@ use App\Mail;
 use App\Scent;
 use App\Sheet;
 use Carbon\Carbon;
+use My_func;
 
 class IndexController extends Controller
 {
@@ -19,13 +20,19 @@ class IndexController extends Controller
         $watuki =$watuki_list[$dt->month -1];//和月処理
         $wareki=$dt->year -2018;
         $wareki="令和".$wareki;//令和処理
+ 
+ 
 
-        //時間帯の色処理
+        /*
+        時間帯の名前と色の処理
+        */
         //日の出時刻取得→緯度経皇居の位置
         $now=$dt->micro;
         $sunrise=date_sunrise( $now, SUNFUNCS_RET_STRING, 35.685180, 139.752805);
         $sunset=date_sunset( $now, SUNFUNCS_RET_STRING, 35.685180, 139.752805);
+        $zikan_name_list=['未明',];
         $zikan_color="white";
+        $zikan_name="時間の名前";
         // if($now){
         //     //東雲と誰彼時の色
         //     $zikan_color="#91e3ff";
@@ -35,7 +42,9 @@ class IndexController extends Controller
         //     //夜の色
         // };
 
-        //季節の名前とその色処理
+        /*
+        季節の名前と色の処理
+        */
         if("3"<= $dt->month && $dt->month <="5"){
             $season_name="春";
             $season_color="#ff91b6";
@@ -56,6 +65,7 @@ class IndexController extends Controller
             'month'=>$watuki,
             'day'=>$dt->day,
             'zikan_color'=>$zikan_color,
+            'zikan_name'->$zikan_name,
             'season_name'=>$season_name,
             'season_color'=>$season_color,
 
