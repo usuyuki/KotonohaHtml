@@ -4,19 +4,20 @@
     @parent
 @endsection
 
-<style>
-.waku{
-    padding: 0.5em 1em;
-        margin: 2em 0;
-        font-weight: bold;
-        color: green;/*文字色*/
-        background: #FFF;
-        border: solid 3px green;/*線*/
-        border-radius: 10px;/*角の丸み*/
-        /* float: left; */
-}
-</style>
 @section('content')
+    <style>
+        .waku{
+            padding: 0.5em 1em;
+                margin: 2em 0;
+                font-weight: bold;
+                color: green;/*文字色*/
+                background: #FFF;
+                border: solid 3px green;/*線*/
+                border-radius: 10px;/*角の丸み*/
+                /* float: left; */
+        }
+    </style>
+    
     <h2>お手紙です</h2>
     <div class="waku">
     <p>{{$from}}<br>より</p>

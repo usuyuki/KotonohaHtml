@@ -56,7 +56,7 @@
 <body>
     @section('menubar')
     <a href="../">
-        <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px class="logo">
+        <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px class="logo" alt="言の葉HTMLのロゴです">
     </a>
     <h2 class="menutitle"></h2>
     <div class="page-seni">

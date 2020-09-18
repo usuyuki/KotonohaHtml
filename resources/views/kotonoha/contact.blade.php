@@ -4,18 +4,20 @@
 @section('menubar')
     @parent
 @endsection
-<style>
-.icon ul{
-    margin:0;
-    padding:0;
-    list-style: none;
-    display:flex;
-}
-.icon ul li{
-    margin-right: 12px;
-}
-</style>
+
 @section('content')
+    <style>
+        .icon ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+            display:flex;
+        }
+        .icon ul li{
+            margin-right: 12px;
+        }
+    </style>
+
     <h2>お問い合わせ</h2>
 
     <p>ご意見、ご感想、バグなどあれば下記フォームよりご連絡ください。</p>

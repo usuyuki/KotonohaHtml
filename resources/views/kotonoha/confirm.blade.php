@@ -4,52 +4,53 @@
     @parent
 @endsection
 
-<style>
-.waku{
-        padding: 0.5em 1em;
-        margin: 2em 0;
-        font-weight: bold;
-        color: #6091d3;/*文字色*/
-        background: #FFF;
-        border: solid 3px #6091d3;/*線*/
-        border-radius: 10px;/*角の丸み*/
-}
 
-.botan-susumu {
-    width:200px;
-    font-size:24px;
-    text-decoration:none;
-    display:block;
-    text-align:center;
-    padding:8px 0 10px;
-    color:#fff;
-    background-color:#6091d3;
-    border-radius:5px;
-    font-family: はんなり明朝;
-    margin: 0 auto; 
-}
-.botan-susumu:hover{
-    background-color:#5179b0;
-    }
-.botan-modoru {
-    width:100px;
-    font-size:18px;
-    text-decoration:none;
-    display:block;
-    text-align:center;
-    padding:8px 0 10px;
-    color:#fff;
-    background-color:#6091d3;
-    border-radius:5px;
-    font-family: はんなり明朝;
-    margin: 0 auto; 
-}
-.botan-modoru:hover{
-    background-color:#5179b0;
-    }
-
-</style>
 @section('content')
+    <style>
+        .waku{
+                padding: 0.5em 1em;
+                margin: 2em 0;
+                font-weight: bold;
+                color: #6091d3;/*文字色*/
+                background: #FFF;
+                border: solid 3px #6091d3;/*線*/
+                border-radius: 10px;/*角の丸み*/
+        }
+
+        .botan-susumu {
+            width:200px;
+            font-size:24px;
+            text-decoration:none;
+            display:block;
+            text-align:center;
+            padding:8px 0 10px;
+            color:#fff;
+            background-color:#6091d3;
+            border-radius:5px;
+            font-family: はんなり明朝;
+            margin: 0 auto; 
+        }
+        .botan-susumu:hover{
+            background-color:#5179b0;
+            }
+        .botan-modoru {
+            width:100px;
+            font-size:18px;
+            text-decoration:none;
+            display:block;
+            text-align:center;
+            padding:8px 0 10px;
+            color:#fff;
+            background-color:#6091d3;
+            border-radius:5px;
+            font-family: はんなり明朝;
+            margin: 0 auto; 
+        }
+        .botan-modoru:hover{
+            background-color:#5179b0;
+            }
+
+    </style>
     <h2>送信確認ページです。</ｈ>
     <div class="waku">
     <p>{{$from}}<br>より</p>

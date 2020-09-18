@@ -1,6 +1,12 @@
 @extends('layouts.kotonohaapp')
 @section('title','手紙を送る')
-    <style>
+
+@section('menubar')
+    @parent
+@endsection
+
+@section('content')
+<style>
         @font-face {
         font-family: 'はんなり明朝';
         src: url(/storage/fonts/hannari/Hannari.otf)format('opentype');
@@ -115,11 +121,6 @@
 
     </style>
 
-<body>
-@section('menubar')
-    @parent
-@endsection
-@section('content')
     <div class="center">
         <h2>ここは手紙を送るページです。</h2>
         <form method="POST" action="/send/confirm">
@@ -220,4 +221,4 @@
     @section('footer')
     @parent 
     @endsection
-</body>
+
