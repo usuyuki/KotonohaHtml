@@ -47,14 +47,16 @@
     .page-seni:hover{
         background: #005e00;/*背景色*/
     }
+    img.logo{
+        margin-bottom:10px;
+    }
         
 </style>
 
 <body>
-    <h1>言の葉HTML</h1>
     @section('menubar')
-
-    <h2 class="menutitle">　</h2>
+    <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px class="logo">
+    <h2 class="menutitle"></h2>
     <div class="page-seni">
     <a href="../">トップ</a>
     </div>
