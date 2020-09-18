@@ -38,7 +38,7 @@ p.torikesi {
       <p>{{$year}}年{{$month}}{{$day}}日です。</p>
       <h4>季節は</h4>
       <p style ="color:{{$season_color}};">{{$season_name}}です。</p>
-      <h4>時間帯は</h4>
+      <!-- <h4>時間帯は</h4> -->
 
     </div>
     <div class="explain">
