@@ -33,6 +33,11 @@ p.torikesi {
     @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスは永遠にβ版です。また、このサービスは暗号化してません。流出すると困る情報は送らないでください。'])
     <p> </p>
     @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.6を公開しました。変更内容：デザインの改善をしました。'])
+    <div class="hizuke">
+      <h3>本日の日付は</h3>
+      <p>{{$year}}年{{$month}}{{$day}}日</p>
+      <p style ="color:{{$season_color}};">{{$season_name}}です。</p>
+    </div>
     <div class="explain">
       <h3>使い方</h3>
       <p>壱.手紙を送るページへ遷移してください。</p>

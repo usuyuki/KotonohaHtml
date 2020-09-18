@@ -8,11 +8,60 @@ use App\Fold;
 use App\Mail;
 use App\Scent;
 use App\Sheet;
+use Carbon\Carbon;
 
 class IndexController extends Controller
 {
     public function index(){
-        return view('kotonoha.index');
+        $dt = Carbon::now();
+        $watuki_list =['睦月', '如月', '弥生', '卯月', '皐月', '水無月', '文月 ', '葉月', '長月', '神無月', '霜月', '師走'];
+        //和暦変換
+        $watuki =$watuki_list[$dt->month -1];//和月処理
+        $wareki=$dt->year -2018;
+        $wareki="令和".$wareki;//令和処理
+
+        //時間帯の色処理
+        //日の出時刻取得→緯度経皇居の位置
+        $now=$dt->micro;
+        $sunrise=date_sunrise( $now, SUNFUNCS_RET_STRING, 35.685180, 139.752805);
+        $sunset=date_sunset( $now, SUNFUNCS_RET_STRING, 35.685180, 139.752805);
+        $zikan_color="white";
+        // if($now){
+        //     //東雲と誰彼時の色
+        //     $zikan_color="#91e3ff";
+        // }else if(){
+        //     //昼間の色
+        // }else if(){
+        //     //夜の色
+        // };
+
+        //季節の名前とその色処理
+        if("3"<= $dt->month && $dt->month <="5"){
+            $season_name="春";
+            $season_color="#ff91b6";
+        }else if("6"<= $dt->month && $dt->month <="8"){
+            $season_name="夏";
+            $season_color="#a0ff91";
+        }else if("9"<= $dt->month && $dt->month <="11"){
+            $season_name="秋";
+            $season_color="#ffc691";
+        }else if("12"<= $dt->month && $dt->month <="2"){
+            $season_name="冬";
+            $season_color="#91e3ff";
+        };
+
+        $hizuke=[
+
+            'year'=>$wareki,
+            'month'=>$watuki,
+            'day'=>$dt->day,
+            'zikan_color'=>$zikan_color,
+            'season_name'=>$season_name,
+            'season_color'=>$season_color,
+
+
+        ];
+        return view('kotonoha.index',$hizuke);
     }
 
     public function contact(){
