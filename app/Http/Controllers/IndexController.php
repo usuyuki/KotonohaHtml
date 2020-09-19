@@ -22,8 +22,15 @@ class IndexController extends Controller
         
         $wareki=My_func::kan_suuzi($dt->year -2018);//漢数字処理
         $wareki="令和".$wareki;//令和処理
- 
- 
+        // 十二時辰追加する？
+        switch($dt->hour){
+            case 23:
+            case 0:
+            case 1:
+            break;
+            
+        };
+        //二十四節気追加する？
 
         /*
         時間帯の名前と色の処理

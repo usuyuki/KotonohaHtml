@@ -1,5 +1,5 @@
 @extends('layouts.kotonohaapp')
-@section('title','御手紙')
+@section('title','言の葉HTML')
 @section('menubar')
     @parent
 @endsection

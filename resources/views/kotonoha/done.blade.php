@@ -57,6 +57,9 @@
             background: #006600;
             color: #000000;
             }
+            .center{
+            text-align:center;
+        }
 
     </style>
 
@@ -76,7 +79,7 @@
         });
     </script>
 
-    <h2>文使いに渡されました。</h2>
+    <h2 class="center">文使いに渡されました。</h2>
     <div class="waku">
         <h2>{{$url}}</h2>
         <p>上記URLを複製してSNSなどで送り先へリンクを共有してください。</p>

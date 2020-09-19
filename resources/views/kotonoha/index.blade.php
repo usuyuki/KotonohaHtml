@@ -29,7 +29,7 @@ p.torikesi {
 </style>
 
     <h2>言の葉HTMLへようこそ</h2>
-    <p>言の葉HTMLでは縦書きの手紙に様々な付加価値を添えて送ることができます。</p>
+    <p>言の葉HTMLでは手紙に様々な付加価値を添えて送ることができます。私なりに日本らしさを大切にした仕様になっています。</p>
     @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスは永遠にβ版です。また、このサービスは暗号化してません。流出すると困る情報は送らないでください。'])
     <p> </p>
     @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.6を公開しました。変更内容：デザインの改善をしました。'])
