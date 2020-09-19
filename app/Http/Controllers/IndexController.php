@@ -25,10 +25,56 @@ class IndexController extends Controller
         // 十二時辰追加する？
         switch($dt->hour){
             case 23:
+            case 24:
             case 0:
+                $zyunizisi="子の刻";
+                break;
             case 1:
-            break;
-            
+            case 2:
+                $zyunizisi="丑の刻";
+                break;
+
+            case 3:
+            case 4:
+                $zyunizisi="寅の刻";
+                break;
+
+            case 5:
+            case 6:
+                $zyunizisi="卯の刻";
+                break;
+            case 7:
+            case 8:
+                $zyunizisi="辰の刻";
+                break;
+            case 9:
+            case 10:
+                $zyunizisi="巳の刻";
+                break;
+            case 11:
+            case 12:
+                $zyunizisi="午の刻";
+                break;
+            case 13:
+            case 14:
+                $zyunizisi="未の刻";
+                break;
+            case 15:
+            case 16:
+                $zyunizisi="申の刻";
+                break;
+            case 17:
+            case 18:
+                $zyunizisi="酉の刻";
+                break;
+            case 19:
+            case 20:
+                $zyunizisi="戌の刻";
+                break;
+            case 21:
+            case 22:
+                $zyunizisi="亥の刻";
+                break;
         };
         //二十四節気追加する？
 
@@ -77,6 +123,7 @@ class IndexController extends Controller
             // 'zikan_name'->$zikan_name,
             'season_name'=>$season_name,
             'season_color'=>$season_color,
+            'zyunizisi'=>$zyunizisi
 
 
         ];

@@ -26,6 +26,13 @@ a.btn--green:hover {
 p.torikesi {
   text-decoration: line-through;
 }
+.border{
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #43a047;
+  margin: 0 0 0 auto;
+  //参考→https://copypet.jp/2304/
+}
 </style>
 
     <h2>言の葉HTMLへようこそ</h2>
@@ -36,11 +43,13 @@ p.torikesi {
     <div class="hizuke">
       <h4>本日の日付は</h4>
       <p>{{$year}}年{{$month}}{{$day}}日です。</p>
+      <h4>時間帯は</h4>
+      <p>{{$zyunizisi}}です。</p>
       <h4>季節は</h4>
       <p style ="color:{{$season_color}};">{{$season_name}}です。</p>
-      <!-- <h4>時間帯は</h4> -->
-
+      <hr class="border" />
     </div>
+    
     <div class="explain">
       <h3>使い方</h3>
       <p>壱.手紙を送るページへ遷移してください。</p>
