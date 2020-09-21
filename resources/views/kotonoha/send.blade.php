@@ -103,6 +103,7 @@
         }
         .moziwaku{
             border: 1px solid #6091d3;
+            
         }
         .moziwaku:focus{
             border: 1px solid #396196;
@@ -121,8 +122,24 @@
 
     </style>
 
+<SCRIPT language="JavaScript">
+<!--
+function check(){
+var strName;
+strName = document.nform.textN.value;
+var test = document.getElementById("test");
+//一応タグを使えないように置き換える
+strName = strName.split("<").join("&lt;");
+strName = strName.split(">").join("&gt;");
+//改行を改行タグに置き換える
+strName = strName.split("\n").join("<br>");
+test.innerHTML = strName;
+}
+//-->
+</SCRIPT>
+
     <div class="center">
-        <h2>ここは手紙を送るページです。</h2>
+        <h2>ここは手紙を送るページです</h2>
         <form method="POST" action="/send/confirm">
         @csrf
         <p>宛名</p>
@@ -130,7 +147,7 @@
         <p>差出人</p>
         <input type="text" name="from"class="moziwaku" required>  
         <p>本文</p>
-        <textarea cols="120" rows="20" name="text" class="moziwaku" required></textarea>
+        <textarea cols="120" rows="20" name="text" class="moziwaku" maxlength="99999" required></textarea>
         <p></p>
     </div>
     
@@ -214,7 +231,7 @@
     <!-- ↓これはsection-groupのdivの終了タグ -->
     </div>
     <p class="tyuui">※すべて選択しないと確認ボタンは押せません。</p>
-    <input type="submit" value="確認" class="botan-susumu">
+    <input type="submit" value="確認" class="botan-susumu" onClick="check()">
     </form>
 @endsection
 

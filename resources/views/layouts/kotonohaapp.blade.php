@@ -50,6 +50,15 @@
     img.logo{
         margin-bottom:10px;
     }
+    .tategaki{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+
+        padding: 30px;
+    }
+    .center{
+            text-align:center;
+        }
         
 </style>
 

@@ -39,7 +39,7 @@ p.torikesi {
     <p>言の葉HTMLでは手紙に様々な付加価値を添えて送ることができます。私なりに日本らしさを大切にした仕様になっています。</p>
     @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスは永遠にβ版です。また、このサービスは暗号化してません。流出すると困る情報は送らないでください。'])
     <p> </p>
-    @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.6を公開しました。変更内容：デザインの改善をしました。'])
+    @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.9を公開しました。変更内容：手紙表示での本文の縦書き表示の試験導入と和暦の表示と文字数の表示を導入しました。'])
     <div class="hizuke">
       <h4>本日の日付は</h4>
       <p>{{$year}}年{{$month}}{{$day}}日です。</p>
@@ -49,7 +49,7 @@ p.torikesi {
       <p style ="color:{{$season_color}};">{{$season_name}}です。</p>
       <hr class="border" />
     </div>
-    
+
     <div class="explain">
       <h3>使い方</h3>
       <p>壱.手紙を送るページへ遷移してください。</p>
