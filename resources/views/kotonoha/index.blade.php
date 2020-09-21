@@ -41,12 +41,12 @@ p.torikesi {
     <p> </p>
     @include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver2.9を公開しました。変更内容：手紙表示での本文の縦書き表示の試験導入と和暦の表示と文字数の表示を導入しました。'])
     <div class="hizuke">
-      <h4>本日の日付は</h4>
-      <p>{{$year}}年{{$month}}{{$day}}日です。</p>
-      <h4>時間帯は</h4>
-      <p>{{$zyunizisi}}です。</p>
+      <h4>現在</h4>
+      <p>{{$year}}年 {{$month}}{{$day}}日 {{$zyunizisi}}</p>
       <h4>季節は</h4>
-      <p style ="color:{{$season_color}};">{{$season_name}}です。</p>
+      <p style ="color:{{$season_color}};">{{$season_name}}</p>
+      <h4>本日の日の出日の入り(東京都)</h4>
+      <p>日の出は{{$sunrise}}<br>日の入りは{{$sunset}}</p>
       <hr class="border" />
     </div>
 

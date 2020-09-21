@@ -82,9 +82,9 @@ class IndexController extends Controller
         時間帯の名前と色の処理
         */
         //日の出時刻取得→緯度経皇居の位置
-        $now=$dt->micro;
-        $sunrise=date_sunrise( $now, SUNFUNCS_RET_STRING, 35.685180, 139.752805);
-        $sunset=date_sunset( $now, SUNFUNCS_RET_STRING, 35.685180, 139.752805);
+
+        $sunrise=date_sunrise( time(), SUNFUNCS_RET_STRING, 35.685180, 139.752805,90.5,9);
+        $sunset=date_sunset( time(), SUNFUNCS_RET_STRING, 35.685180, 139.752805,90.5,9);
         $zikan_name_list=['未明',];
         $zikan_color="white";
         // $zikan_name="あ";
@@ -123,7 +123,9 @@ class IndexController extends Controller
             // 'zikan_name'->$zikan_name,
             'season_name'=>$season_name,
             'season_color'=>$season_color,
-            'zyunizisi'=>$zyunizisi
+            'zyunizisi'=>$zyunizisi,
+            'sunrise'=>$sunrise,
+            'sunset'=>&$sunset
 
 
         ];
