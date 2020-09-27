@@ -66,7 +66,7 @@
     @section('menubar')
     <!-- 言の葉HTMLへようこそ。人生初のwebアプリです。温かい目でご利用ください。 -->
     <a href="../">
-        <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px class="logo" alt="言の葉HTMLのロゴです">
+        <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=150px height=60px class="logo" alt="言の葉HTMLのロゴです">
     </a>
     <h2 class="menutitle"></h2>
     <div class="page-seni">
