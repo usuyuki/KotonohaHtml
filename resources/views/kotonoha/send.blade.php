@@ -103,10 +103,12 @@
         }
         .moziwaku{
             border: 1px solid #6091d3;
+            font-size:20px;
+            font-family: はんなり明朝;
             
         }
         .moziwaku:focus{
-            border: 1px solid #396196;
+            border: 2px solid #63db7d;
             /* background: #c2dcff;文字入力中の枠の色 */
             /* opacity:0.3;透明度 */
 
@@ -114,7 +116,7 @@
         .center{
             text-align:center
         }
-        textarea {
+        textarea{
             resize: none;
             /* width:300px;
             height:200px; */

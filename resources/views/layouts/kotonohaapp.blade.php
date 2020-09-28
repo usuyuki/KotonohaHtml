@@ -27,7 +27,14 @@
     h3 { line-height: 0.5em; }
     u1 {font-size:12pt; はんなり明朝;}
     hr {margin:25px 100px; border-top:1px dashed #ddd; font-family: はんなり明朝;}
-    .menutitle {font-size:14pt; font-weight:bold; margin:0px;font-family: はんなり明朝;}
+    .menutitle {
+        font-size:14pt;
+        font-weight:bold;
+        margin:0px;
+        font-family: はんなり明朝;
+        float:left;
+        /* text-align:center; */
+        }
     .content {margin:10px;font-family: はんなり明朝;}
     .footer{text-align:right; font-size:10pt; margin:10px; border-bottom:solid 1px #ccc; color:#ccc;font-family: はんなり明朝;}
     .page-seni a{
@@ -38,14 +45,22 @@
         display: inline;
         position: relative;
         display: inline-block;
+        margin:30px 2px 0;
         padding: 0.25em 0.5em;
         background: green;/*背景色*/
         border-radius: 4px;/*角の丸み*/
         box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+        text-align:center;
+        display:inline-block;
 
     }
     .page-seni:hover{
         background: #005e00;/*背景色*/
+    }
+    .logo{
+        float:left;
+        margin:0px 20px 0px 15px;
+        display:inline-block;
     }
     img.logo{
         margin-bottom:10px;
@@ -65,9 +80,11 @@
 <body>
     @section('menubar')
     <!-- 言の葉HTMLへようこそ。人生初のwebアプリです。温かい目でご利用ください。 -->
-    <a href="../">
-        <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px class="logo" alt="言の葉HTMLのロゴです">
-    </a>
+    <div class="logo">
+        <a href="../">
+            <img src="/img/logos/KotonohaHTMLlogo20200918.png" width=300px height=78px alt="言の葉HTMLのロゴです">
+        </a>
+    </div>
     <h2 class="menutitle"></h2>
     <div class="page-seni">
     <a href="../">トップ</a>
