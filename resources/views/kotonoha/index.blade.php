@@ -42,7 +42,7 @@
 <p>言の葉HTMLでは手紙に様々な付加価値を添えて送ることができます。私なりに日本らしさを大切にした仕様になっています。</p>
 @include('components.message',['msg_title'=>'お知らせ','msg_content'=>'このサービスで流出すると困る情報は送らないでください。'])
 <p> </p>
-@include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver3.1を公開しました。変更内容：ヘッダーのレイアウト変更、文字入力枠での文字サイズとフォントの変更、SNS共有ボタンを追加しました。'])
+@include('components.message',['msg_title'=>'新着情報','msg_content'=>'ver3.2を公開しました。変更内容：送信ページでのSNS共有ボタンの追加、本文に英字が含まれる時も縦にして表示する仕様に変更しました'])
 <div class="hizuke">
   <h4>現在</h4>
   <p>{{$year}}年 {{$month}}{{$day}}日 {{$zyunizisi}}</p>
