@@ -17,7 +17,8 @@
 
         gtag('config', 'UA-175673455-1');
     </script>
-
+    <!-- Googleフォントはんなり-->
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
 </head>
 
 <style>
@@ -30,7 +31,7 @@
         font-size: 16pt;
         color: #999;
         margin: 5px;
-        font-family: はんなり明朝;
+        font-family: "はんなり明朝","Hannari";
     }
 
     h1 {
@@ -39,7 +40,7 @@
         color: green;
         margin: -20px 0px -30px 0px;
         letter-spacing: -4pt;
-        font-family: はんなり明朝;
+        font-family: "はんなり明朝","Hannari";
     }
 
     h3 {
@@ -54,21 +55,21 @@
     hr {
         margin: 25px 100px;
         border-top: 1px dashed #ddd;
-        font-family: はんなり明朝;
+        font-family: "はんなり明朝","Hannari";
     }
 
     .menutitle {
         font-size: 14pt;
         font-weight: bold;
         margin: 0px;
-        font-family: はんなり明朝;
+        font-family: "はんなり明朝","Hannari";
         float: left;
         /* text-align:center; */
     }
 
     .content {
         margin: 10px;
-        font-family: はんなり明朝;
+        font-family: "はんなり明朝","Hannari";
     }
 
     .footer {
@@ -77,7 +78,7 @@
         margin: 10px;
         border-bottom: solid 1px #ccc;
         color: #ccc;
-        font-family: はんなり明朝;
+        font-family: "はんなり明朝","Hannari";
     }
 
     .page-seni a {
