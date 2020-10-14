@@ -53,7 +53,7 @@
         color: #ffffff;
         background-color: green;
         border-radius: 5px;
-        font-family: はんなり明朝;
+        font-family: "Hannari","はんなり明朝",'Sawarabi Mincho';
         margin: 0.1em auto;
     }
 

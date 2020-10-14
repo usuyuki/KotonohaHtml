@@ -27,7 +27,7 @@
             color:#fff;
             background-color:#6091d3;
             border-radius:5px;
-            font-family: はんなり明朝;
+            font-family:"Hannari","はんなり明朝",'Sawarabi Mincho';
             margin: 0 auto; 
         }
         .botan-susumu:hover{
@@ -43,7 +43,7 @@
             color:#fff;
             background-color:#6091d3;
             border-radius:5px;
-            font-family: はんなり明朝;
+            font-family: "Hannari","はんなり明朝",'Sawarabi Mincho';
             margin: 0 auto; 
         }
         .botan-modoru:hover{

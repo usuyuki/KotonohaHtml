@@ -7,14 +7,7 @@
 
 @section('content')
 <style>
-        @font-face {
-        font-family: 'はんなり明朝';
-        src: url(/storage/fonts/hannari/Hannari.otf)format('opentype');
-        }
-        p{font-family: はんなり明朝;}
-        body {font-size:16pt; color:#999; font-family: はんなり明朝;}
-        h1 {font-size:100pt; text-align:right; color:#f6f6f6; margin:-50px 0px -100px 0px; letter-spacing:-4pt; font-family: はんなり明朝;}
-
+       
         /* 説明の文字サイズを小さくする */
         p.intro{
             font-size:12pt;
@@ -91,7 +84,7 @@
             color:#fff;
             background-color:#6091d3;
             border-radius:5px;
-            font-family: はんなり明朝;
+            font-family: "Hannari","はんなり明朝",'Sawarabi Mincho';
             margin: 0 auto; 
         }
         .botan-susumu:hover{
@@ -104,8 +97,7 @@
         .moziwaku{
             border: 1px solid #6091d3;
             font-size:20px;
-            font-family: はんなり明朝;
-            
+            font-family: "Hannari","はんなり明朝",'Sawarabi Mincho';
         }
         .moziwaku:focus{
             border: 2px solid #63db7d;
