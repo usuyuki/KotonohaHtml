@@ -121,7 +121,9 @@
             /* width:300px;
             height:200px; */
         }
-
+        .explain{
+            text-align: center;
+        }
     </style>
 
 <SCRIPT language="JavaScript">
@@ -158,6 +160,10 @@ test.innerHTML = strName;
     <div class="selection-group">
         <div class="waku">
         <p class='title'>1.香りをお選びください。</p>
+        <p class="explain">
+            ここでは平安時代に薫物として用いられた薫香の中で、代表的な六種の薫物からお選びいただけます。<br>
+            「黒方」「梅花」「荷葉」「侍従」の4種類は源氏物語にも登場しております。
+        </p>
             <div class="sentakusi">
                 @foreach($scents as $scent)
                     <input id="{{$scent->id}}" type="radio" name="scent_id" value="{{$scent->id}}" required>
