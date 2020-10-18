@@ -16,23 +16,24 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-175673455-1');
+
     </script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Googleフォントはんなりとさわら-->
     <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 </head>
 
 <style>
-    @font-face {
-        font-family: 'はんなり明朝';
-        src: url("/fonts/hannari/Hannari.otf")format('opentype');
+    <blade font|-face%20%7B%0D>font-family: 'はんなり明朝';
+    src: url("/fonts/hannari/Hannari.otf")format('opentype');
     }
 
     body {
         font-size: 16pt;
         color: #999;
         margin: 5px;
-        font-family: "Hannari","はんなり明朝",'Sawarabi Mincho';
+        font-family: "Hannari", "はんなり明朝", 'Sawarabi Mincho';
     }
 
     h1 {
@@ -127,6 +128,7 @@
     .center {
         text-align: center;
     }
+
 </style>
 
 <body>
