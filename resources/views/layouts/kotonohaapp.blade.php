@@ -25,8 +25,9 @@
 </head>
 
 <style>
-    <blade font|-face%20%7B%0D>font-family: 'はんなり明朝';
-    src: url("/fonts/hannari/Hannari.otf")format('opentype');
+ @font-face {
+	font-family: 'はんなり明朝';
+	src: url("/fonts/hannari/Hannari.otf")format('opentype');
     }
 
     body {
