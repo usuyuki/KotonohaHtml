@@ -23,10 +23,10 @@
         <th>宛名</th>
         <th>差出人</th>
         <th>本文</th>
-        <th>fold</th>
         <th>scent</th>
         <th>flower</th>
         <th>sheet</th>
+        <th>fold</th>
         <th>uuid</th>
     </tr>
     @foreach($mails as $mail)
@@ -34,10 +34,10 @@
             <td>{{ $mail->for }}</td>
             <td>{{ $mail->from }}</td>
             <td>{{ $mail->text }}</td>
-            <td>{{ $mail->fold_id }}</td>
             <td>{{ $mail->scent_id }}</td>
             <td>{{ $mail->flower_id }}</td>
             <td>{{ $mail->sheet_id }}</td>
+            <td>{{ $mail->fold_id }}</td>
             <td>{{ $mail->uuid }}</td>
         </tr>
     @endforeach
