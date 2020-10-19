@@ -5,19 +5,18 @@
     <title>@yield('title')</title>
     <meta name="description" content="言の葉HTMLは手紙に付加価値を加えて送れるwebアプリです。">
     <meta charset="utf-8">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175673455-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180837698-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+  gtag('config', 'UA-180837698-2');
+</script>
 
-        gtag('config', 'UA-175673455-1');
 
-    </script>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Googleフォントはんなりとさわら-->
     <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
