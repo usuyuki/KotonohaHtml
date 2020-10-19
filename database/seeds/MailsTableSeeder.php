@@ -21,7 +21,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'5759389f-808d-4dc7-abe0-df309d7867ea',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
 
         $param=[
             'for'=>'なおふみ',
@@ -33,7 +33,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'b350f1d6-d337-4bc5-a96c-34d083ff3f19',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
 
         $param=[
             'for'=>'小畑くん',
@@ -45,7 +45,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'86052d82-e33b-45bc-9d65-519a055e7e2b',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'pvpvpvsourse@yahoo.co.jp',
             'from'=>'you@com',
@@ -56,7 +56,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'74d2edb5-19b5-4a6b-8669-5aef36ee52cd',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'twilight.sky.bbb@gmail.com',
             'from'=>'twilight.sky.bbb@gmail.com',
@@ -67,7 +67,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'cc6de435-f4b6-4cbc-8504-dc50ff4bd372',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'あい',
             'from'=>'はら',
@@ -78,7 +78,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'11ee68f2-f6ed-474d-a491-8fc8e773a5ff',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'杉田',
             'from'=>'猿子',
@@ -89,7 +89,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'3120aaa0-1b3c-48d7-b35f-a6de029cb697',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'みまり',
             'from'=>'んりま',
@@ -100,7 +100,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'7436e929-116b-47dc-82e9-bc4b3b0e0e98',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         
         $param=[
             'for'=>'なおふみ',
@@ -112,7 +112,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'548d31dc-b239-4dbd-b84f-58cc384c54b2',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'飯泉先輩',
             'from'=>'小畑尚史',
@@ -123,7 +123,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'3',
             'uuid'=>'1b0c0c91-d5f8-40a5-81f9-440f7e412f9f',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'なおふみ',
             'from'=>'かずま',
@@ -134,7 +134,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'1',
             'uuid'=>'11a59928-0bd1-443a-9106-a6e00b4c8b8b',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'飯泉先輩',
             'from'=>'小畑尚史',
@@ -145,7 +145,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'3',
             'uuid'=>'34bb9673-1b61-4471-b9e5-09eb01d56caf',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'なおふみ',
             'from'=>'かずま',
@@ -156,7 +156,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'17113142-8fa4-443b-99f4-4278f6c93d3f',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
 
         $param=[
             'for'=>'まよ',
@@ -168,7 +168,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'2',
             'uuid'=>'050bae3e-bcaf-4ba9-a381-6b002f6d6ba1',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
         $param=[
             'for'=>'やん',
             'from'=>'カズマアイ',
@@ -179,7 +179,7 @@ class MailsTableSeeder extends Seeder
             'fold_id'=>'1',
             'uuid'=>'f199f255-7672-444a-9f8c-9f2acb5924a6',
         ];
-        DB::table('scents')->insert($param);
+        DB::table('mails')->insert($param);
 
     }
 }
