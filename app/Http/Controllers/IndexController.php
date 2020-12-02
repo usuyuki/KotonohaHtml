@@ -109,7 +109,7 @@ class IndexController extends Controller
         }else if("9"<= $dt->month && $dt->month <="11"){
             $season_name="秋";
             $season_color="#ffc691";
-        }else if("12"<= $dt->month && $dt->month <="2"){
+        }else {
             $season_name="冬";
             $season_color="#91e3ff";
         };
