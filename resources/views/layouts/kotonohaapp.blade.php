@@ -15,7 +15,8 @@
 
   gtag('config', 'UA-180837698-2');
 </script>
-
+{{-- 検索に引っかからないように --}}
+<meta name="robots" content="noindex">
 
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Googleフォントはんなりとさわら-->
