@@ -1,0 +1,47 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: phpunit/phpunit
+    versions:
+    - 9.5.1
+    - 9.5.2
+    - 9.5.3
+  - dependency-name: facade/ignition
+    versions:
+    - 2.5.11
+    - 2.5.12
+    - 2.5.8
+    - 2.5.9
+  - dependency-name: laravel/framework
+    versions:
+    - 8.22.1
+    - 8.24.0
+  - dependency-name: laravel/tinker
+    versions:
+    - 2.6.0
+  - dependency-name: nunomaduro/collision
+    versions:
+    - 5.3.0
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: sass
+    versions:
+    - 1.32.11
+    - 1.32.5
+    - 1.32.6
+    - 1.32.7
+    - 1.32.8
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
